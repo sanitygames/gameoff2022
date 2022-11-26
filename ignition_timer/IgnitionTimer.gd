@@ -1,16 +1,22 @@
 extends Node2D
 
+var is_active = false
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+export (float) var timer = 300.0
 
+var blink = true
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+func _physics_process(delta):
+	if is_active:
+		timer -= delta
+	time_update()
 
+func _on_BlinkTimer_timeout():
+	blink = !blink
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func time_update():
+	var c = ":" if blink else " "
+	var m = int(timer) / 60
+	var s = int(timer) % 60
+	$Timer.text = "%d%s%02d" % [m, c, s]
+
