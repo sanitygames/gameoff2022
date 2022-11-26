@@ -1,4 +1,4 @@
-[gd_scene load_steps=108 format=2]
+[gd_scene load_steps=111 format=2]
 
 [ext_resource path="res://resource/png/demo_player/player18.png" type="Texture" id=1]
 [ext_resource path="res://resource/png/demo_player/player19.png" type="Texture" id=2]
@@ -102,6 +102,9 @@
 [ext_resource path="res://resource/png/demo/blood_red3.png" type="Texture" id=100]
 [ext_resource path="res://ignition_timer/IgnitionTimer.gd" type="Script" id=101]
 [ext_resource path="res://ignition_timer/IgnitionTimer.tscn" type="PackedScene" id=102]
+[ext_resource path="res://zombie/Zombie.tscn" type="PackedScene" id=103]
+[ext_resource path="res://game/Game.tscn" type="PackedScene" id=104]
+[ext_resource path="res://demo/Demo.gd" type="Script" id=105]
 
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
@@ -225,6 +228,18 @@ tracks/7/keys = {
 "update": 0,
 "values": [ 1 ]
 }
+tracks/8/type = "value"
+tracks/8/path = NodePath("Zombies:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "main"
@@ -272,7 +287,7 @@ tracks/3/loop_wrap = true
 tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = {
-"times": PoolRealArray( 0, 42.1 ),
+"times": PoolRealArray( 0, 43 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ false, true ]
@@ -284,7 +299,7 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 40.5 ),
+"times": PoolRealArray( 0, 43 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
 "values": [ 0, 0 ]
@@ -361,8 +376,22 @@ tracks/10/keys = {
 "update": 1,
 "values": [ false, true, false, true, false, true ]
 }
+tracks/11/type = "value"
+tracks/11/path = NodePath("Zombies:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 42.1, 42.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
 
 [node name="Demo" type="Node2D"]
+script = ExtResource( 105 )
+next_scene = ExtResource( 104 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_right = 320.0
@@ -377,6 +406,9 @@ position = Vector2( 80, 119.25 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 4 )
 frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="RedParticle" type="CPUParticles2D" parent="."]
 position = Vector2( 29, 94 )
@@ -386,12 +418,18 @@ direction = Vector2( -1, -1 )
 initial_velocity = 41.43
 initial_velocity_random = 1.0
 color = Color( 1, 0, 0.117188, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="GreenBlood" type="AnimatedSprite" parent="."]
 position = Vector2( 80, 119.25 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 3 )
 frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="GreenParticle" type="CPUParticles2D" parent="."]
 position = Vector2( 37, 97 )
@@ -408,6 +446,9 @@ scale_amount_random = 1.0
 color = Color( 0.0313726, 0.976471, 0, 1 )
 hue_variation = 1.0
 hue_variation_random = 0.02
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Mask2" type="ColorRect" parent="."]
 margin_left = 26.0
@@ -415,24 +456,36 @@ margin_top = 82.0
 margin_right = 50.0
 margin_bottom = 105.0
 color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Mask4" type="ColorRect" parent="."]
 margin_top = 62.0
 margin_right = 43.0
 margin_bottom = 87.0
 color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Mask5" type="ColorRect" parent="."]
 margin_top = 81.0
 margin_right = 7.0
 margin_bottom = 106.0
 color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Mask3" type="ColorRect" parent="."]
 margin_top = 94.0
 margin_right = 50.0
 margin_bottom = 184.0
 color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Cabin" type="Sprite" parent="."]
 position = Vector2( 52, 93 )
@@ -456,10 +509,10 @@ __meta__ = {
 }
 
 [node name="Player" type="AnimatedSprite" parent="."]
-modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 80, 119 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 1 )
+frame = 89
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -477,3 +530,23 @@ stream = ExtResource( 97 )
 
 [node name="IgnitionTimer" parent="." instance=ExtResource( 102 )]
 script = ExtResource( 101 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Zombies" type="Node2D" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+
+[node name="Zombie" parent="Zombies" instance=ExtResource( 103 )]
+position = Vector2( 128, 115 )
+
+[node name="Zombie4" parent="Zombies" instance=ExtResource( 103 )]
+position = Vector2( 59, 151 )
+
+[node name="Zombie5" parent="Zombies" instance=ExtResource( 103 )]
+position = Vector2( 190, 194 )
+
+[node name="Zombie6" parent="Zombies" instance=ExtResource( 103 )]
+position = Vector2( 195, 131 )
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
