@@ -533,6 +533,7 @@ script = ExtResource( 101 )
 __meta__ = {
 "_edit_lock_": true
 }
+is_active = false
 
 [node name="Zombies" type="Node2D" parent="."]
 modulate = Color( 1, 1, 1, 0 )

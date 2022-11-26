@@ -1,6 +1,6 @@
 extends Node2D
 
-var is_active = false
+export (bool) var is_active = false
 
 export (float) var timer = 300.0
 

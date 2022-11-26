@@ -169,6 +169,7 @@ __meta__ = {
 
 [node name="IgnitionTimer" parent="." instance=ExtResource( 91 )]
 script = ExtResource( 74 )
+is_active = false
 
 [node name="StartButton" type="Button" parent="."]
 margin_left = 238.0
