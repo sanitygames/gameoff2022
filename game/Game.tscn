@@ -148,6 +148,7 @@ __meta__ = {
 }
 
 [node name="Fukidasi" type="TextureRect" parent="."]
+visible = false
 margin_left = 113.0
 margin_top = 83.0
 margin_right = 299.0
@@ -219,18 +220,6 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Zombie" parent="." instance=ExtResource( 1 )]
-position = Vector2( 128, 115 )
-
-[node name="Zombie4" parent="." instance=ExtResource( 1 )]
-position = Vector2( 59, 151 )
-
-[node name="Zombie5" parent="." instance=ExtResource( 1 )]
-position = Vector2( 190, 194 )
-
-[node name="Zombie6" parent="." instance=ExtResource( 1 )]
-position = Vector2( 195, 131 )
-
 [node name="WeaponSpawner" type="Node2D" parent="."]
 position = Vector2( 133, 156 )
 script = ExtResource( 107 )
@@ -282,22 +271,16 @@ custom_fonts/font = ExtResource( 106 )
 text = "x 99"
 align = 2
 
-[node name="Debug" type="Node2D" parent="."]
-visible = false
+[node name="Zombie" parent="." instance=ExtResource( 1 )]
+position = Vector2( 128, 115 )
 
-[node name="Button" type="Button" parent="Debug"]
-margin_left = 252.0
-margin_top = 65.0
-margin_right = 314.0
-margin_bottom = 85.0
-text = "damage"
+[node name="Zombie4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 59, 151 )
 
-[node name="Button2" type="Button" parent="Debug"]
-margin_left = 252.0
-margin_top = 89.0
-margin_right = 314.0
-margin_bottom = 109.0
-text = "get w"
+[node name="Zombie5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 190, 194 )
 
-[connection signal="pressed" from="Debug/Button" to="GameUILayer/LifeUI" method="_on_Button_pressed"]
-[connection signal="pressed" from="Debug/Button2" to="GameUILayer/WeaponUI" method="_on_Button2_pressed"]
+[node name="Zombie6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 195, 131 )
+
+[connection signal="ignition_timer_update" from="GameUILayer/IgnitionTimer" to="." method="_on_IgnitionTimer_ignition_timer_update"]
