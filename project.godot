@@ -71,7 +71,7 @@ enter={
 
 [layer_names]
 
-2d_physics/layer_1="zombie"
+2d_physics/layer_1="weapon"
 2d_physics/layer_2="bullet"
 
 [physics]

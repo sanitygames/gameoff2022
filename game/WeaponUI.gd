@@ -13,6 +13,10 @@ func get_weapon():
 		_update()
 		return true
 
+func add_weapon():
+	count = min(30, count + 1)
+	_update()
+
 func _update():
 	$Count.text = "x %02d" % count
 	$Count.modulate = Color.white if count > 5 else Color.red
