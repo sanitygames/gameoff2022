@@ -91,7 +91,7 @@
 [ext_resource path="res://resource/png/demo_player/player14.png" type="Texture" id=89]
 [ext_resource path="res://resource/png/demo_player/player15.png" type="Texture" id=90]
 [ext_resource path="res://resource/png/demo_player/player16.png" type="Texture" id=91]
-[ext_resource path="res://resource/png/door.png" type="Texture" id=92]
+[ext_resource path="res://resource/png/button/door.png" type="Texture" id=92]
 [ext_resource path="res://resource/png/demo_player/player17.png" type="Texture" id=93]
 
 [sub_resource type="SpriteFrames" id=1]

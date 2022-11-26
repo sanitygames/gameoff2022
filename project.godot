@@ -11,15 +11,12 @@ config_version=4
 [application]
 
 config/name="Five minute to ignition"
-run/main_scene="res://10title/title.tscn"
+run/main_scene="res://title/Title.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-SoundManager="*res://sound_manager/sound_manager.tscn"
-ParticleManager="*res://particle_manager/particle_manager.tscn"
-Data="*res://data/data.tscn"
-Ui="*res://ui/ui.tscn"
+Ui="*res://ui/UI.tscn"
 
 [display]
 
