@@ -283,4 +283,22 @@ position = Vector2( 190, 194 )
 [node name="Zombie6" parent="." instance=ExtResource( 1 )]
 position = Vector2( 195, 131 )
 
-[connection signal="ignition_timer_update" from="GameUILayer/IgnitionTimer" to="." method="_on_IgnitionTimer_ignition_timer_update"]
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+
+[node name="ZombieTutorialDebug" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+text = "zombie tutorial"
+
+[node name="PrayTutorialDebug" type="Label" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 14.0
+text = "pray tutorial"
+
+[connection signal="destroy" from="Zombie" to="." method="destroy_tutorial_zombie"]
+[connection signal="destroy" from="Zombie4" to="." method="destroy_tutorial_zombie"]
+[connection signal="destroy" from="Zombie5" to="." method="destroy_tutorial_zombie"]
+[connection signal="destroy" from="Zombie6" to="." method="destroy_tutorial_zombie"]
+[connection signal="timeout" from="Timer" to="." method="zombie_tutorial_timer_timeout"]

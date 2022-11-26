@@ -11,5 +11,5 @@ dest_files=[ "res://.import/ゾンビの声1.mp3-a036d01035e07a27b6665e9c00cffb3
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

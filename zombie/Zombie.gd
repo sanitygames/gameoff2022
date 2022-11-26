@@ -1,5 +1,7 @@
 extends Node2D
 
+signal destroy
+
 var frame = 0
 var sprite
 var direction = Vector2.ZERO
@@ -29,4 +31,5 @@ func _on_WeaponCollision_body_entered(_body:Node):
 	var p = Global.get_zombie_particle()
 	p.position = position
 	owner.add_child(p)
+	emit_signal("destroy")
 	queue_free()
