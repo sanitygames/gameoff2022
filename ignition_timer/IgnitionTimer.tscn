@@ -7,6 +7,7 @@
 [node name="IgnitionTimer" type="Node2D"]
 position = Vector2( 8, 191 )
 script = ExtResource( 3 )
+timer = 180.0
 
 [node name="Timer" type="Label" parent="."]
 margin_right = 64.0

@@ -10,12 +10,13 @@ config_version=4
 
 [application]
 
-config/name="Five minute to ignition"
-run/main_scene="res://title/Title.tscn"
+config/name="Three minute to ignition"
+run/main_scene="res://game/Game.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
+Global="*res://global/Global.tscn"
 SoundManager="*res://sound_manager/SoundManager.tscn"
 Ui="*res://ui/UI.tscn"
 

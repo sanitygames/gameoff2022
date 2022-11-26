@@ -23,3 +23,10 @@ func _on_Timer_timeout():
 	frame += 1
 	sprite.frame = frame % sprite.frames.get_frame_count("default")
 	$FrameTimer.wait_time = randf() * randf()
+
+
+func _on_WeaponCollision_body_entered(_body:Node):
+	var p = Global.get_zombie_particle()
+	p.position = position
+	owner.add_child(p)
+	queue_free()

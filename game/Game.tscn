@@ -1,4 +1,4 @@
-[gd_scene load_steps=113 format=2]
+[gd_scene load_steps=115 format=2]
 
 [ext_resource path="res://zombie/Zombie.tscn" type="PackedScene" id=1]
 [ext_resource path="res://resource/png/demo_player/player18.png" type="Texture" id=2]
@@ -109,6 +109,8 @@
 [ext_resource path="res://game/WeaponSpawner.gd" type="Script" id=107]
 [ext_resource path="res://game/Game.gd" type="Script" id=108]
 [ext_resource path="res://game/WeaponUI.gd" type="Script" id=109]
+[ext_resource path="res://resource/png/fukidasi.png" type="Texture" id=110]
+[ext_resource path="res://game/Fukidasi.gd" type="Script" id=111]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -144,6 +146,29 @@ color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="Fukidasi" type="TextureRect" parent="."]
+margin_left = 113.0
+margin_top = 83.0
+margin_right = 299.0
+margin_bottom = 153.0
+texture = ExtResource( 110 )
+expand = true
+script = ExtResource( 111 )
+
+[node name="Label" type="RichTextLabel" parent="Fukidasi"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 9.0
+margin_top = 7.0
+margin_right = -6.0
+margin_bottom = -31.0
+custom_fonts/normal_font = ExtResource( 106 )
+bbcode_enabled = true
+bbcode_text = "[center][shake]AAAAAAAA![/shake][/center]"
+meta_underlined = false
+text = "AAAAAAAA!"
+scroll_active = false
 
 [node name="RedBlood" type="AnimatedSprite" parent="."]
 position = Vector2( 80, 119.25 )
@@ -257,7 +282,8 @@ custom_fonts/font = ExtResource( 106 )
 text = "x 99"
 align = 2
 
-[node name="Debug" type="Node" parent="."]
+[node name="Debug" type="Node2D" parent="."]
+visible = false
 
 [node name="Button" type="Button" parent="Debug"]
 margin_left = 252.0
