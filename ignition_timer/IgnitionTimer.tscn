@@ -13,7 +13,7 @@ timer = 180.0
 margin_right = 64.0
 margin_bottom = 32.0
 custom_fonts/font = ExtResource( 2 )
-text = "5:00"
+text = "2:00"
 
 [node name="ToIgnition" type="Label" parent="."]
 margin_top = 26.0

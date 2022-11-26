@@ -13,8 +13,8 @@ func get_weapon():
 		_update()
 		return true
 
-func add_weapon():
-	count = min(30, count + 1)
+func add_weapon(value):
+	count = min(30, count + value)
 	_update()
 
 func _update():
@@ -25,3 +25,7 @@ func _update():
 func _on_Button2_pressed():
 	var res = get_weapon()
 	print(res)
+
+
+func _on_Fukidasi_finished():
+	add_weapon(Global.game_level + 1)

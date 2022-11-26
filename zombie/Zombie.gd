@@ -1,5 +1,7 @@
 extends Node2D
 
+export (bool) var is_active = true
+
 signal destroy
 
 var frame = 0
@@ -21,6 +23,11 @@ func _ready():
 
 	$FrameTimer.wait_time = randf()
 
+func _physics_process(_delta):
+	if is_active:
+		var velocity = (Global.player_position - position).normalized()
+		position += velocity * 0.1
+
 func _on_Timer_timeout():
 	frame += 1
 	sprite.frame = frame % sprite.frames.get_frame_count("default")
@@ -29,7 +36,9 @@ func _on_Timer_timeout():
 
 func _on_WeaponCollision_body_entered(_body:Node):
 	var p = Global.get_zombie_particle()
+	p.emitting = true
 	p.position = position
-	owner.add_child(p)
+	get_parent().add_child(p)
+	_body.queue_free()
 	emit_signal("destroy")
 	queue_free()
