@@ -10,7 +10,7 @@ config_version=4
 
 [application]
 
-config/name="Gameoff 2022"
+config/name="Five minute to ignition"
 run/main_scene="res://10title/title.tscn"
 config/icon="res://icon.png"
 
