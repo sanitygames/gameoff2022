@@ -1,4 +1,4 @@
-[gd_scene load_steps=101 format=2]
+[gd_scene load_steps=102 format=2]
 
 [ext_resource path="res://resource/png/demo_player/player18.png" type="Texture" id=1]
 [ext_resource path="res://resource/png/demo_player/player19.png" type="Texture" id=2]
@@ -97,6 +97,7 @@
 [ext_resource path="res://resource/png/demo_player/player17.png" type="Texture" id=95]
 [ext_resource path="res://resource/png/rect1.png" type="Texture" id=96]
 [ext_resource path="res://resource/font/font16px.tres" type="DynamicFont" id=97]
+[ext_resource path="res://resource/sound/title03.mp3" type="AudioStream" id=98]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -179,3 +180,7 @@ custom_styles/hover = SubResource( 2 )
 custom_styles/pressed = SubResource( 2 )
 custom_styles/normal = SubResource( 4 )
 text = "start"
+
+[node name="TitleBGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 98 )
+autoplay = true
