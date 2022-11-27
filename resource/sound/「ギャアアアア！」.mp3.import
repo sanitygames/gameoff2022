@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/「ギャアアアア！」.mp3-64a7ec004b735c15248210ea2f0ddc72.mp3str"
+
+[deps]
+
+source_file="res://resource/sound/「ギャアアアア！」.mp3"
+dest_files=[ "res://.import/「ギャアアアア！」.mp3-64a7ec004b735c15248210ea2f0ddc72.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

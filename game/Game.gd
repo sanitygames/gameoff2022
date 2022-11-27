@@ -127,3 +127,13 @@ func zombie_tutorial_timer_timeout():
 
 
 
+
+
+func _on_PlayerCollsion_area_entered(_area:Area2D):
+	$GameUILayer/LifeUI.damage()
+
+
+func _on_LifeUI_game_over():
+	$BGM.stop()
+	$GameOverLayer.visible = true
+	print("gameover")

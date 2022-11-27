@@ -19,7 +19,10 @@ func damage():
 	var s = sprites.pop_back()
 	s.visible = false
 	if life <= 0:
+		$GameOver.play()
 		emit_signal("game_over")
+	else:
+		$Damage.play()
 
 
 func _on_Button_pressed():

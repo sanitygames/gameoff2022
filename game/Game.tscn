@@ -1,4 +1,4 @@
-[gd_scene load_steps=128 format=2]
+[gd_scene load_steps=135 format=2]
 
 [ext_resource path="res://zombie/Zombie.tscn" type="PackedScene" id=1]
 [ext_resource path="res://resource/png/demo_player/player18.png" type="Texture" id=2]
@@ -117,6 +117,10 @@
 [ext_resource path="res://resource/sound/gam3.mp3" type="AudioStream" id=115]
 [ext_resource path="res://zombie/jump_zombie.tscn" type="PackedScene" id=116]
 [ext_resource path="res://game/JumpZombieSpawner.gd" type="Script" id=117]
+[ext_resource path="res://resource/sound/「キャー」.mp3" type="AudioStream" id=118]
+[ext_resource path="res://resource/sound/「ギャアアアア！」.mp3" type="AudioStream" id=119]
+[ext_resource path="res://resource/png/rect1.png" type="Texture" id=120]
+[ext_resource path="res://resource/font/font16px.tres" type="DynamicFont" id=121]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -133,6 +137,8 @@ animations = [ {
 "name": "default",
 "speed": 5.0
 } ]
+
+[sub_resource type="CircleShape2D" id=11]
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
@@ -176,6 +182,23 @@ _data = {
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 31, 64, 0, 0, 0, 0, 58, 63 )
 }
+
+[sub_resource type="StyleBoxTexture" id=12]
+texture = ExtResource( 120 )
+region_rect = Rect2( 0, 0, 16, 16 )
+margin_left = 1.0
+margin_right = 1.0
+margin_top = 1.0
+margin_bottom = 1.0
+modulate_color = Color( 1, 0, 0.4, 1 )
+
+[sub_resource type="StyleBoxTexture" id=13]
+texture = ExtResource( 120 )
+region_rect = Rect2( 0, 0, 16, 16 )
+margin_left = 1.0
+margin_right = 1.0
+margin_top = 1.0
+margin_bottom = 1.0
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 108 )
@@ -245,6 +268,15 @@ __meta__ = {
 position = Vector2( 6.5, 6 )
 texture = ExtResource( 98 )
 offset = Vector2( 14, 0 )
+
+[node name="PlayerCollsion" type="Area2D" parent="."]
+position = Vector2( 133, 156 )
+scale = Vector2( 0.5, 0.5 )
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCollsion"]
+shape = SubResource( 11 )
 
 [node name="Car" type="Sprite" parent="."]
 position = Vector2( 133, 156 )
@@ -338,6 +370,12 @@ position = Vector2( 179, 221 )
 scale = Vector2( 2, 2 )
 texture = ExtResource( 104 )
 
+[node name="Damage" type="AudioStreamPlayer" parent="GameUILayer/LifeUI"]
+stream = ExtResource( 118 )
+
+[node name="GameOver" type="AudioStreamPlayer" parent="GameUILayer/LifeUI"]
+stream = ExtResource( 119 )
+
 [node name="WeaponUI" type="Node2D" parent="GameUILayer"]
 script = ExtResource( 109 )
 
@@ -391,13 +429,60 @@ margin_right = 77.0
 margin_bottom = 14.0
 text = "normal level"
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="GameOverLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="GameOverLayer"]
+margin_left = 15.0
+margin_top = 40.0
+margin_right = 301.0
+margin_bottom = 167.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="GameOverLayer"]
+margin_left = 15.0
+margin_top = 40.0
+margin_right = 301.0
+margin_bottom = 167.0
+texture = ExtResource( 120 )
+patch_margin_left = 1
+patch_margin_top = 1
+patch_margin_right = 1
+patch_margin_bottom = 1
+
+[node name="Label" type="Label" parent="GameOverLayer"]
+margin_left = 89.0
+margin_top = 75.0
+margin_right = 225.0
+margin_bottom = 107.0
+custom_fonts/font = ExtResource( 106 )
+text = "GAME OVER"
+
+[node name="StartButton" type="Button" parent="GameOverLayer"]
+margin_left = 119.0
+margin_top = 117.0
+margin_right = 194.0
+margin_bottom = 143.0
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 0, 0.4, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 121 )
+custom_styles/hover = SubResource( 12 )
+custom_styles/pressed = SubResource( 12 )
+custom_styles/normal = SubResource( 13 )
+text = "Retry"
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 115 )
 autoplay = true
 
 [connection signal="finished" from="Fukidasi" to="GameUILayer/WeaponUI" method="_on_Fukidasi_finished"]
+[connection signal="hit" from="Fukidasi" to="Car" method="_on_Fukidasi_hit"]
+[connection signal="area_entered" from="PlayerCollsion" to="." method="_on_PlayerCollsion_area_entered"]
 [connection signal="timeout" from="ZombieSpawner/Timer" to="ZombieSpawner" method="_on_Timer_timeout"]
 [connection signal="timeout" from="JumpZombieSpawner/Timer" to="JumpZombieSpawner" method="_on_Timer_timeout"]
+[connection signal="game_over" from="GameUILayer/LifeUI" to="." method="_on_LifeUI_game_over"]
 [connection signal="destroy" from="Zombie" to="." method="destroy_tutorial_zombie"]
 [connection signal="destroy" from="Zombie4" to="." method="destroy_tutorial_zombie"]
 [connection signal="destroy" from="Zombie5" to="." method="destroy_tutorial_zombie"]
