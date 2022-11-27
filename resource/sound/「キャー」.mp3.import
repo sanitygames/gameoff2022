@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/「キャー」.mp3-1e3559d9a2aa7a9c3b7f951dca616d5f.mp3str"
+
+[deps]
+
+source_file="res://resource/sound/「キャー」.mp3"
+dest_files=[ "res://.import/「キャー」.mp3-1e3559d9a2aa7a9c3b7f951dca616d5f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

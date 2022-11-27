@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/爆発4.mp3-5f225ec5441bdbab31086e40b0af5236.mp3str"
+
+[deps]
+
+source_file="res://resource/sound/爆発4.mp3"
+dest_files=[ "res://.import/爆発4.mp3-5f225ec5441bdbab31086e40b0af5236.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

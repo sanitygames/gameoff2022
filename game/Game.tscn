@@ -1,0 +1,720 @@
+[gd_scene load_steps=148 format=2]
+
+[ext_resource path="res://zombie/Zombie.tscn" type="PackedScene" id=1]
+[ext_resource path="res://resource/png/demo_player/player18.png" type="Texture" id=2]
+[ext_resource path="res://resource/png/demo_player/player19.png" type="Texture" id=3]
+[ext_resource path="res://resource/png/demo_player/player20.png" type="Texture" id=4]
+[ext_resource path="res://resource/png/demo_player/player21.png" type="Texture" id=5]
+[ext_resource path="res://resource/png/demo_player/player22.png" type="Texture" id=6]
+[ext_resource path="res://resource/png/demo_player/player23.png" type="Texture" id=7]
+[ext_resource path="res://resource/png/demo_player/player24.png" type="Texture" id=8]
+[ext_resource path="res://resource/png/demo_player/player26.png" type="Texture" id=9]
+[ext_resource path="res://resource/png/demo_player/player25.png" type="Texture" id=10]
+[ext_resource path="res://resource/png/demo_player/player27.png" type="Texture" id=11]
+[ext_resource path="res://resource/png/demo_player/player28.png" type="Texture" id=12]
+[ext_resource path="res://resource/png/demo_player/player29.png" type="Texture" id=13]
+[ext_resource path="res://resource/png/demo_player/player30.png" type="Texture" id=14]
+[ext_resource path="res://resource/png/demo_player/player31.png" type="Texture" id=15]
+[ext_resource path="res://resource/png/demo_player/player32.png" type="Texture" id=16]
+[ext_resource path="res://resource/png/demo_player/player33.png" type="Texture" id=17]
+[ext_resource path="res://resource/png/demo_player/player34.png" type="Texture" id=18]
+[ext_resource path="res://resource/png/demo_player/player35.png" type="Texture" id=19]
+[ext_resource path="res://resource/png/demo_player/player36.png" type="Texture" id=20]
+[ext_resource path="res://resource/png/demo_player/player37.png" type="Texture" id=21]
+[ext_resource path="res://resource/png/demo_player/player38.png" type="Texture" id=22]
+[ext_resource path="res://resource/png/demo_player/player39.png" type="Texture" id=23]
+[ext_resource path="res://resource/png/demo_player/player40.png" type="Texture" id=24]
+[ext_resource path="res://resource/png/demo_player/player41.png" type="Texture" id=25]
+[ext_resource path="res://resource/png/demo_player/player42.png" type="Texture" id=26]
+[ext_resource path="res://resource/png/demo_player/player43.png" type="Texture" id=27]
+[ext_resource path="res://resource/png/demo_player/player44.png" type="Texture" id=28]
+[ext_resource path="res://resource/png/demo_player/player45.png" type="Texture" id=29]
+[ext_resource path="res://resource/png/demo_player/player46.png" type="Texture" id=30]
+[ext_resource path="res://resource/png/demo_player/player47.png" type="Texture" id=31]
+[ext_resource path="res://resource/png/demo_player/player48.png" type="Texture" id=32]
+[ext_resource path="res://resource/png/demo_player/player49.png" type="Texture" id=33]
+[ext_resource path="res://resource/png/demo_player/player50.png" type="Texture" id=34]
+[ext_resource path="res://resource/png/demo_player/player51.png" type="Texture" id=35]
+[ext_resource path="res://resource/png/demo_player/player52.png" type="Texture" id=36]
+[ext_resource path="res://resource/png/demo_player/player53.png" type="Texture" id=37]
+[ext_resource path="res://resource/png/demo_player/player54.png" type="Texture" id=38]
+[ext_resource path="res://resource/png/demo_player/player55.png" type="Texture" id=39]
+[ext_resource path="res://resource/png/demo_player/player56.png" type="Texture" id=40]
+[ext_resource path="res://resource/png/demo_player/player57.png" type="Texture" id=41]
+[ext_resource path="res://resource/png/demo_player/player58.png" type="Texture" id=42]
+[ext_resource path="res://resource/png/demo_player/player59.png" type="Texture" id=43]
+[ext_resource path="res://resource/png/demo_player/player60.png" type="Texture" id=44]
+[ext_resource path="res://resource/png/demo_player/player61.png" type="Texture" id=45]
+[ext_resource path="res://resource/png/demo_player/player62.png" type="Texture" id=46]
+[ext_resource path="res://resource/png/demo_player/player63.png" type="Texture" id=47]
+[ext_resource path="res://resource/png/demo_player/player64.png" type="Texture" id=48]
+[ext_resource path="res://resource/png/demo_player/player65.png" type="Texture" id=49]
+[ext_resource path="res://resource/png/demo_player/player66.png" type="Texture" id=50]
+[ext_resource path="res://resource/png/demo_player/player67.png" type="Texture" id=51]
+[ext_resource path="res://resource/png/demo_player/player68.png" type="Texture" id=52]
+[ext_resource path="res://resource/png/demo_player/player69.png" type="Texture" id=53]
+[ext_resource path="res://resource/png/demo_player/player70.png" type="Texture" id=54]
+[ext_resource path="res://resource/png/demo_player/player71.png" type="Texture" id=55]
+[ext_resource path="res://resource/png/demo_player/player72.png" type="Texture" id=56]
+[ext_resource path="res://resource/png/demo_player/player73.png" type="Texture" id=57]
+[ext_resource path="res://resource/png/demo_player/player74.png" type="Texture" id=58]
+[ext_resource path="res://resource/png/demo_player/player75.png" type="Texture" id=59]
+[ext_resource path="res://resource/png/demo_player/player76.png" type="Texture" id=60]
+[ext_resource path="res://resource/png/demo_player/player77.png" type="Texture" id=61]
+[ext_resource path="res://resource/png/demo_player/player78.png" type="Texture" id=62]
+[ext_resource path="res://resource/png/demo_player/player79.png" type="Texture" id=63]
+[ext_resource path="res://resource/png/demo_player/player80.png" type="Texture" id=64]
+[ext_resource path="res://resource/png/demo_player/player81.png" type="Texture" id=65]
+[ext_resource path="res://resource/png/demo_player/player82.png" type="Texture" id=66]
+[ext_resource path="res://resource/png/demo_player/player83.png" type="Texture" id=67]
+[ext_resource path="res://resource/png/demo_player/player84.png" type="Texture" id=68]
+[ext_resource path="res://resource/png/demo_player/player85.png" type="Texture" id=69]
+[ext_resource path="res://resource/png/demo_player/player86.png" type="Texture" id=70]
+[ext_resource path="res://resource/png/demo_player/player87.png" type="Texture" id=71]
+[ext_resource path="res://resource/png/demo_player/player88.png" type="Texture" id=72]
+[ext_resource path="res://resource/png/demo_player/player89.png" type="Texture" id=73]
+[ext_resource path="res://resource/png/demo_player/player90.png" type="Texture" id=74]
+[ext_resource path="res://weapon/Weapon.tscn" type="PackedScene" id=75]
+[ext_resource path="res://resource/png/demo/blood_red2.png" type="Texture" id=76]
+[ext_resource path="res://resource/png/demo/blood_green3.png" type="Texture" id=77]
+[ext_resource path="res://resource/png/demo/blood_green1.png" type="Texture" id=78]
+[ext_resource path="res://resource/png/demo_player/player1.png" type="Texture" id=79]
+[ext_resource path="res://resource/png/demo_player/player2.png" type="Texture" id=80]
+[ext_resource path="res://resource/png/demo_player/player3.png" type="Texture" id=81]
+[ext_resource path="res://resource/png/demo_player/player4.png" type="Texture" id=82]
+[ext_resource path="res://resource/png/demo_player/player5.png" type="Texture" id=83]
+[ext_resource path="res://resource/png/demo_player/player6.png" type="Texture" id=84]
+[ext_resource path="res://resource/png/demo_player/player7.png" type="Texture" id=85]
+[ext_resource path="res://resource/png/demo_player/player8.png" type="Texture" id=86]
+[ext_resource path="res://resource/png/demo_player/player9.png" type="Texture" id=87]
+[ext_resource path="res://resource/png/demo_player/player10.png" type="Texture" id=88]
+[ext_resource path="res://resource/png/demo_player/player11.png" type="Texture" id=89]
+[ext_resource path="res://resource/png/demo_player/player12.png" type="Texture" id=90]
+[ext_resource path="res://resource/png/demo_player/player13.png" type="Texture" id=91]
+[ext_resource path="res://resource/png/demo_player/player14.png" type="Texture" id=92]
+[ext_resource path="res://resource/png/demo_player/player15.png" type="Texture" id=93]
+[ext_resource path="res://resource/png/demo_player/player16.png" type="Texture" id=94]
+[ext_resource path="res://ignition_timer/IgnitionTimer.tscn" type="PackedScene" id=95]
+[ext_resource path="res://resource/png/car.png" type="Texture" id=96]
+[ext_resource path="res://resource/png/cabin.png" type="Texture" id=97]
+[ext_resource path="res://resource/png/button/door.png" type="Texture" id=98]
+[ext_resource path="res://resource/png/demo/blood_green2.png" type="Texture" id=99]
+[ext_resource path="res://resource/png/demo/blood_red1.png" type="Texture" id=100]
+[ext_resource path="res://resource/png/demo/blood_red3.png" type="Texture" id=101]
+[ext_resource path="res://resource/png/demo_player/player17.png" type="Texture" id=102]
+[ext_resource path="res://game/Life.gd" type="Script" id=103]
+[ext_resource path="res://resource/png/heart.png" type="Texture" id=104]
+[ext_resource path="res://resource/png/stone1.png" type="Texture" id=105]
+[ext_resource path="res://resource/font/font32px.tres" type="DynamicFont" id=106]
+[ext_resource path="res://game/WeaponSpawner.gd" type="Script" id=107]
+[ext_resource path="res://game/Game.gd" type="Script" id=108]
+[ext_resource path="res://game/WeaponUI.gd" type="Script" id=109]
+[ext_resource path="res://resource/png/fukidasi.png" type="Texture" id=110]
+[ext_resource path="res://game/Fukidasi.gd" type="Script" id=111]
+[ext_resource path="res://game/ZombieSpawner.gd" type="Script" id=112]
+[ext_resource path="res://game/Car.gd" type="Script" id=113]
+[ext_resource path="res://resource/sound/engine.wav" type="AudioStream" id=114]
+[ext_resource path="res://resource/sound/gam3.mp3" type="AudioStream" id=115]
+[ext_resource path="res://game/ZombieSpawner.gd" type="Script" id=116]
+[ext_resource path="res://resource/sound/「キャー」.mp3" type="AudioStream" id=118]
+[ext_resource path="res://resource/sound/「ギャアアアア！」.mp3" type="AudioStream" id=119]
+[ext_resource path="res://resource/png/rect1.png" type="Texture" id=120]
+[ext_resource path="res://resource/font/font16px.tres" type="DynamicFont" id=121]
+[ext_resource path="res://resource/sound/打撃3.mp3" type="AudioStream" id=122]
+[ext_resource path="res://game/Cabin.gd" type="Script" id=123]
+[ext_resource path="res://resource/sound/車のエンジンをかける1.mp3" type="AudioStream" id=124]
+[ext_resource path="res://resource/sound/ヘリコプター飛行中（機外）.mp3" type="AudioStream" id=125]
+[ext_resource path="res://resource/png/bomb2.png" type="Texture" id=126]
+[ext_resource path="res://game/Bomb.gd" type="Script" id=127]
+[ext_resource path="res://resource/png/bomb1.png" type="Texture" id=128]
+[ext_resource path="res://resource/sound/爆発4.mp3" type="AudioStream" id=129]
+[ext_resource path="res://resource/sound/レベルアップ.mp3" type="AudioStream" id=130]
+
+[sub_resource type="Gradient" id=14]
+offsets = PoolRealArray( 0, 0.813953, 1 )
+colors = PoolColorArray( 0, 0, 0, 1, 0, 0.124804, 0.339893, 1, 0, 0.367188, 1, 1 )
+
+[sub_resource type="GradientTexture2D" id=15]
+gradient = SubResource( 14 )
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 100 ), ExtResource( 76 ), ExtResource( 101 ) ],
+"loop": false,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 78 ), ExtResource( 99 ), ExtResource( 77 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=11]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 102 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 10 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ) ],
+"loop": false,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="Curve2D" id=4]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 199, 269, 0, 0, 0, 0, 303, 269 )
+}
+
+[sub_resource type="Curve2D" id=5]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -30, 140, 0, 0, 0, 0, -29, 227 )
+}
+
+[sub_resource type="Curve2D" id=6]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 331, 1, 0, 0, 0, 0, 334, 200 )
+}
+
+[sub_resource type="Curve2D" id=7]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 129, -22, 0, 0, 0, 0, 353, -23, 0, 0, 0, 0, 354, 201 )
+}
+
+[sub_resource type="Curve2D" id=8]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 147, -42, 0, 0, 0, 0, 276, -42 )
+}
+
+[sub_resource type="Curve2D" id=9]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 60, 93, 0, 0, 0, 0, 68, 93 )
+}
+
+[sub_resource type="Curve2D" id=10]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 31, 64, 0, 0, 0, 0, 58, 63 )
+}
+
+[sub_resource type="StyleBoxTexture" id=12]
+texture = ExtResource( 120 )
+region_rect = Rect2( 0, 0, 16, 16 )
+margin_left = 1.0
+margin_right = 1.0
+margin_top = 1.0
+margin_bottom = 1.0
+modulate_color = Color( 1, 0, 0.4, 1 )
+
+[sub_resource type="StyleBoxTexture" id=13]
+texture = ExtResource( 120 )
+region_rect = Rect2( 0, 0, 16, 16 )
+margin_left = 1.0
+margin_right = 1.0
+margin_top = 1.0
+margin_bottom = 1.0
+
+[sub_resource type="Animation" id=16]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Car:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 133, -136 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Player:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 80, -173 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Fukidasi:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Fukidasi:rect_position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 113, -214 ) ]
+}
+
+[sub_resource type="Animation" id=17]
+resource_name = "main"
+length = 25.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Car:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 11, 20.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 133, 156 ), Vector2( 133, 156 ), Vector2( 133, -136 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Player:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 11, 20.9 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 80, 119 ), Vector2( 80, 119 ), Vector2( 80, -173 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("GameUILayer:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 1.8 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Fukidasi:rect_position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 20.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 113, 83 ), Vector2( 113, -214 ) ]
+}
+
+[sub_resource type="SpriteFrames" id=18]
+animations = [ {
+"frames": [ ExtResource( 128 ), ExtResource( 128 ), ExtResource( 126 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="Game" type="Node2D"]
+script = ExtResource( 108 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 320.0
+margin_bottom = 240.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ColorRect2" type="TextureRect" parent="."]
+margin_right = 317.0
+margin_bottom = 320.0
+rect_rotation = -90.0
+texture = SubResource( 15 )
+expand = true
+
+[node name="Fukidasi" type="TextureRect" parent="."]
+visible = false
+margin_left = 113.0
+margin_top = 83.0
+margin_right = 299.0
+margin_bottom = 153.0
+texture = ExtResource( 110 )
+expand = true
+script = ExtResource( 111 )
+
+[node name="Label" type="RichTextLabel" parent="Fukidasi"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 9.0
+margin_top = 7.0
+margin_right = -6.0
+margin_bottom = -31.0
+custom_fonts/normal_font = ExtResource( 106 )
+bbcode_enabled = true
+bbcode_text = "[center][shake]AAAAAAAA![/shake][/center]"
+meta_underlined = false
+text = "AAAAAAAA!"
+scroll_active = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Fukidasi"]
+stream = ExtResource( 114 )
+
+[node name="RedBlood" type="AnimatedSprite" parent="."]
+position = Vector2( 80, 119.25 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 1 )
+frame = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="GreenBlood" type="AnimatedSprite" parent="."]
+position = Vector2( 80, 119.25 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 2 )
+frame = 2
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Cabin" type="Sprite" parent="."]
+position = Vector2( 52, 93 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 97 )
+script = ExtResource( 123 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Door" type="Sprite" parent="Cabin"]
+position = Vector2( 6.5, 6 )
+texture = ExtResource( 98 )
+offset = Vector2( 14, 0 )
+
+[node name="Tween" type="Tween" parent="Cabin"]
+
+[node name="PlayerCollsion" type="Area2D" parent="."]
+position = Vector2( 133, 156 )
+scale = Vector2( 0.5, 0.5 )
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCollsion"]
+shape = SubResource( 11 )
+
+[node name="Car" type="Sprite" parent="."]
+position = Vector2( 133, 156 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 96 )
+offset = Vector2( -12, 12 )
+script = ExtResource( 113 )
+
+[node name="Camera2D" type="Camera2D" parent="Car"]
+offset = Vector2( 27.024, -36.054 )
+
+[node name="Player" type="AnimatedSprite" parent="."]
+position = Vector2( 80, 119 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 3 )
+frame = 89
+playing = true
+
+[node name="WeaponSpawner" type="Node2D" parent="."]
+position = Vector2( 133, 156 )
+script = ExtResource( 107 )
+weapon_prefab = ExtResource( 75 )
+gravity = 500.0
+speed = 300.0
+
+[node name="ZombieSpawner" type="Node2D" parent="."]
+script = ExtResource( 112 )
+zombie_prefab = ExtResource( 1 )
+
+[node name="Path2D" type="Path2D" parent="ZombieSpawner"]
+curve = SubResource( 4 )
+
+[node name="Path2D2" type="Path2D" parent="ZombieSpawner"]
+curve = SubResource( 5 )
+
+[node name="Path2D3" type="Path2D" parent="ZombieSpawner"]
+curve = SubResource( 6 )
+
+[node name="Path2D4" type="Path2D" parent="ZombieSpawner"]
+position = Vector2( -1, 1 )
+curve = SubResource( 7 )
+
+[node name="Path2D5" type="Path2D" parent="ZombieSpawner"]
+position = Vector2( -1, 1 )
+curve = SubResource( 8 )
+
+[node name="Path2D6" type="Path2D" parent="ZombieSpawner"]
+position = Vector2( -1, 1 )
+curve = SubResource( 9 )
+
+[node name="Timer" type="Timer" parent="ZombieSpawner"]
+wait_time = 10.0
+autostart = true
+
+[node name="JumpZombieSpawner" type="Node2D" parent="."]
+script = ExtResource( 116 )
+zombie_prefab = ExtResource( 1 )
+is_jump = true
+
+[node name="Path2D" type="Path2D" parent="JumpZombieSpawner"]
+curve = SubResource( 10 )
+
+[node name="Timer" type="Timer" parent="JumpZombieSpawner"]
+wait_time = 2.0
+autostart = true
+
+[node name="Spawn" type="AudioStreamPlayer" parent="JumpZombieSpawner"]
+stream = ExtResource( 122 )
+
+[node name="GameUILayer" type="CanvasLayer" parent="."]
+
+[node name="IgnitionTimer" parent="GameUILayer" instance=ExtResource( 95 )]
+unique_name_in_owner = true
+__meta__ = {
+"_edit_lock_": true
+}
+is_active = true
+
+[node name="LifeUI" type="Node2D" parent="GameUILayer"]
+position = Vector2( 8, -9 )
+script = ExtResource( 103 )
+
+[node name="Heart" type="Sprite" parent="GameUILayer/LifeUI"]
+position = Vector2( 115, 222 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 104 )
+
+[node name="Heart2" type="Sprite" parent="GameUILayer/LifeUI"]
+position = Vector2( 147, 221 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 104 )
+
+[node name="Heart3" type="Sprite" parent="GameUILayer/LifeUI"]
+position = Vector2( 179, 221 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 104 )
+
+[node name="Damage" type="AudioStreamPlayer" parent="GameUILayer/LifeUI"]
+stream = ExtResource( 118 )
+
+[node name="GameOver" type="AudioStreamPlayer" parent="GameUILayer/LifeUI"]
+stream = ExtResource( 119 )
+
+[node name="WeaponUI" type="Node2D" parent="GameUILayer"]
+script = ExtResource( 109 )
+
+[node name="Stone" type="Sprite" parent="GameUILayer/WeaponUI"]
+position = Vector2( 239, 221 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 105 )
+
+[node name="Count" type="Label" parent="GameUILayer/WeaponUI"]
+margin_left = 255.0
+margin_top = 202.0
+margin_right = 311.0
+margin_bottom = 234.0
+custom_fonts/font = ExtResource( 106 )
+text = "x 99"
+align = 2
+
+[node name="Zombie" parent="." instance=ExtResource( 1 )]
+position = Vector2( 128, 115 )
+is_active = false
+animation = 2
+
+[node name="Zombie4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 59, 151 )
+is_active = false
+animation = 1
+
+[node name="Zombie5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 190, 194 )
+is_active = false
+animation = 1
+
+[node name="Zombie6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 195, 131 )
+is_active = false
+animation = 2
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 10.0
+
+[node name="GameOverLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="GameOverLayer"]
+position = Vector2( 136, 158 )
+amount = 22
+lifetime = 1.53
+explosiveness = 0.83
+randomness = 0.63
+direction = Vector2( 0, -1 )
+spread = 13.59
+initial_velocity = 54.25
+initial_velocity_random = 0.05
+scale_amount = 3.0
+scale_amount_random = 1.0
+color = Color( 1, 0, 0.4, 1 )
+
+[node name="ColorRect" type="ColorRect" parent="GameOverLayer"]
+margin_left = 15.0
+margin_top = 40.0
+margin_right = 301.0
+margin_bottom = 167.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="GameOverLayer"]
+margin_left = 15.0
+margin_top = 40.0
+margin_right = 301.0
+margin_bottom = 167.0
+texture = ExtResource( 120 )
+patch_margin_left = 1
+patch_margin_top = 1
+patch_margin_right = 1
+patch_margin_bottom = 1
+
+[node name="Label" type="Label" parent="GameOverLayer"]
+margin_left = 89.0
+margin_top = 75.0
+margin_right = 225.0
+margin_bottom = 107.0
+custom_fonts/font = ExtResource( 106 )
+text = "GAME OVER"
+
+[node name="StartButton" type="Button" parent="GameOverLayer"]
+margin_left = 119.0
+margin_top = 117.0
+margin_right = 194.0
+margin_bottom = 143.0
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 0, 0.4, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 121 )
+custom_styles/hover = SubResource( 12 )
+custom_styles/pressed = SubResource( 12 )
+custom_styles/normal = SubResource( 13 )
+text = "Retry"
+
+[node name="GameClearLayer" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="GameClearLayer"]
+margin_left = 15.0
+margin_top = 48.0
+margin_right = 301.0
+margin_bottom = 175.0
+color = Color( 0, 0, 0, 1 )
+
+[node name="NinePatchRect" type="NinePatchRect" parent="GameClearLayer"]
+margin_left = 15.0
+margin_top = 48.0
+margin_right = 301.0
+margin_bottom = 175.0
+texture = ExtResource( 120 )
+patch_margin_left = 1
+patch_margin_top = 1
+patch_margin_right = 1
+patch_margin_bottom = 1
+
+[node name="Label2" type="Label" parent="GameClearLayer"]
+margin_left = 72.0
+margin_top = 120.0
+margin_right = 253.0
+margin_bottom = 136.0
+custom_fonts/font = ExtResource( 121 )
+text = "Thank you for playing!!"
+
+[node name="Label" type="Label" parent="GameClearLayer"]
+margin_left = 69.0
+margin_top = 83.0
+margin_right = 261.0
+margin_bottom = 115.0
+custom_fonts/font = ExtResource( 106 )
+text = "YOU SURVIVED!"
+
+[node name="StartButton" type="Button" parent="GameClearLayer"]
+visible = false
+margin_left = 119.0
+margin_top = -128.0
+margin_right = 194.0
+margin_bottom = -102.0
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 0, 0.4, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 121 )
+custom_styles/hover = SubResource( 12 )
+custom_styles/pressed = SubResource( 12 )
+custom_styles/normal = SubResource( 13 )
+text = "Title"
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 115 )
+autoplay = true
+
+[node name="Button" type="Button" parent="."]
+visible = false
+margin_right = 12.0
+margin_bottom = 20.0
+text = "clear"
+
+[node name="Ignition" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 124 )
+
+[node name="Fly" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 125 )
+
+[node name="Ending" type="AnimationPlayer" parent="."]
+reset_on_save = false
+anims/RESET = SubResource( 16 )
+anims/main = SubResource( 17 )
+
+[node name="Bomb" type="AnimatedSprite" parent="."]
+position = Vector2( 818, -284 )
+scale = Vector2( 4, 4 )
+frames = SubResource( 18 )
+playing = true
+offset = Vector2( -172.25, 29.5 )
+script = ExtResource( 127 )
+
+[node name="Bomb2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 129 )
+
+[node name="End" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 130 )
+
+[connection signal="finished" from="Fukidasi" to="GameUILayer/WeaponUI" method="_on_Fukidasi_finished"]
+[connection signal="hit" from="Fukidasi" to="Car" method="_on_Fukidasi_hit"]
+[connection signal="area_entered" from="PlayerCollsion" to="." method="_on_PlayerCollsion_area_entered"]
+[connection signal="timeout" from="ZombieSpawner/Timer" to="ZombieSpawner" method="_on_Timer_timeout"]
+[connection signal="jump_zombie_spawn" from="JumpZombieSpawner" to="Cabin" method="_on_JumpZombieSpawner_jump_zombie_spawn"]
+[connection signal="timeout" from="JumpZombieSpawner/Timer" to="JumpZombieSpawner" method="_on_Timer_timeout"]
+[connection signal="ignition" from="GameUILayer/IgnitionTimer" to="." method="_on_IgnitionTimer_ignition"]
+[connection signal="game_over" from="GameUILayer/LifeUI" to="." method="_on_LifeUI_game_over"]
+[connection signal="destroy" from="Zombie" to="." method="destroy_tutorial_zombie"]
+[connection signal="destroy" from="Zombie4" to="." method="destroy_tutorial_zombie"]
+[connection signal="destroy" from="Zombie5" to="." method="destroy_tutorial_zombie"]
+[connection signal="destroy" from="Zombie6" to="." method="destroy_tutorial_zombie"]
+[connection signal="timeout" from="Timer" to="." method="zombie_tutorial_timer_timeout"]
+[connection signal="pressed" from="GameOverLayer/StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="pressed" from="GameClearLayer/StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

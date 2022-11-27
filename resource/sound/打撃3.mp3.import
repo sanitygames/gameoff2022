@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/打撃3.mp3-b726167e4a7a31edf5755754e44d84e0.mp3str"
+
+[deps]
+
+source_file="res://resource/sound/打撃3.mp3"
+dest_files=[ "res://.import/打撃3.mp3-b726167e4a7a31edf5755754e44d84e0.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

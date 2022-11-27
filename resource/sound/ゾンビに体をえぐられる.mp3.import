@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ゾンビに体をえぐられる.mp3-a6220301ad510d6f13d8f9b9e66b000f.mp3str"
+
+[deps]
+
+source_file="res://resource/sound/ゾンビに体をえぐられる.mp3"
+dest_files=[ "res://.import/ゾンビに体をえぐられる.mp3-a6220301ad510d6f13d8f9b9e66b000f.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

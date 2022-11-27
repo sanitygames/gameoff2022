@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/車のエンジンをかける1.mp3-6bd3af2147cd917d365919b71c15ebb3.mp3str"
+
+[deps]
+
+source_file="res://resource/sound/車のエンジンをかける1.mp3"
+dest_files=[ "res://.import/車のエンジンをかける1.mp3-6bd3af2147cd917d365919b71c15ebb3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

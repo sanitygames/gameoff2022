@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://global/Global.gd" type="Script" id=1]
+[ext_resource path="res://global/ZombieParticle.tscn" type="PackedScene" id=2]
+
+[sub_resource type="Curve" id=1]
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 0.418856, 0.436937 ), -1.5577, -1.5577, 0, 0, Vector2( 0.527048, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.632148, 0.531532 ), 0.0, 0.0, 0, 0, Vector2( 0.715611, 0.126126 ), 0.0, 0.0, 0, 0, Vector2( 0.757342, 0.396396 ), 0.0, 0.0, 0, 0, Vector2( 0.820711, 0.0990992 ), 0.0, 0.0, 0, 0, Vector2( 0.85626, 0.301802 ), -0.190071, -0.190071, 0, 0, Vector2( 0.890263, 0 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.018018 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="Curve" id=2]
+_data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.318393, 0.77027 ), 1.5266, 1.5266, 0, 0, Vector2( 0.44204, 0.400901 ), -10.2771, -10.2771, 0, 0, Vector2( 0.517774, 0.00450456 ), 0.0, 0.0, 0, 0, Vector2( 0.629057, 0.626126 ), 1.86962, 1.86962, 0, 0, Vector2( 0.715611, 0.306306 ), -5.82883, -5.82883, 0, 0, Vector2( 0.746522, 0.963964 ), 0.0, 0.0, 0, 0, Vector2( 0.83153, 0.108108 ), 0.0, 0.0, 0, 0, Vector2( 0.846986, 1 ), 0.0, 0.0, 0, 0, Vector2( 0.936631, 0.297297 ), 0.0, 0.0, 0, 0, Vector2( 1, 0.0900902 ), 0.582884, 0.0, 0, 0 ]
+
+[node name="Global" type="Node2D"]
+position = Vector2( 4, 2 )
+script = ExtResource( 1 )
+zombie_particle_prefab = ExtResource( 2 )
+wait_time_curve = SubResource( 1 )
+zombie_speed_curve = SubResource( 2 )

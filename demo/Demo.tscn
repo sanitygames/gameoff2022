@@ -1,0 +1,560 @@
+[gd_scene load_steps=111 format=2]
+
+[ext_resource path="res://resource/png/demo_player/player18.png" type="Texture" id=1]
+[ext_resource path="res://resource/png/demo_player/player19.png" type="Texture" id=2]
+[ext_resource path="res://resource/png/demo_player/player20.png" type="Texture" id=3]
+[ext_resource path="res://resource/png/demo_player/player21.png" type="Texture" id=4]
+[ext_resource path="res://resource/png/demo_player/player22.png" type="Texture" id=5]
+[ext_resource path="res://resource/png/demo_player/player23.png" type="Texture" id=6]
+[ext_resource path="res://resource/png/demo_player/player24.png" type="Texture" id=7]
+[ext_resource path="res://resource/png/demo_player/player26.png" type="Texture" id=8]
+[ext_resource path="res://resource/png/demo_player/player25.png" type="Texture" id=9]
+[ext_resource path="res://resource/png/demo_player/player27.png" type="Texture" id=10]
+[ext_resource path="res://resource/png/demo_player/player28.png" type="Texture" id=11]
+[ext_resource path="res://resource/png/demo_player/player29.png" type="Texture" id=12]
+[ext_resource path="res://resource/png/demo_player/player30.png" type="Texture" id=13]
+[ext_resource path="res://resource/png/demo_player/player31.png" type="Texture" id=14]
+[ext_resource path="res://resource/png/demo_player/player32.png" type="Texture" id=15]
+[ext_resource path="res://resource/png/demo_player/player33.png" type="Texture" id=16]
+[ext_resource path="res://resource/png/demo_player/player34.png" type="Texture" id=17]
+[ext_resource path="res://resource/png/demo_player/player35.png" type="Texture" id=18]
+[ext_resource path="res://resource/png/demo_player/player36.png" type="Texture" id=19]
+[ext_resource path="res://resource/png/demo_player/player37.png" type="Texture" id=20]
+[ext_resource path="res://resource/png/demo_player/player38.png" type="Texture" id=21]
+[ext_resource path="res://resource/png/demo_player/player39.png" type="Texture" id=22]
+[ext_resource path="res://resource/png/demo_player/player40.png" type="Texture" id=23]
+[ext_resource path="res://resource/png/demo_player/player41.png" type="Texture" id=24]
+[ext_resource path="res://resource/png/demo_player/player42.png" type="Texture" id=25]
+[ext_resource path="res://resource/png/demo_player/player43.png" type="Texture" id=26]
+[ext_resource path="res://resource/png/demo_player/player44.png" type="Texture" id=27]
+[ext_resource path="res://resource/png/demo_player/player45.png" type="Texture" id=28]
+[ext_resource path="res://resource/png/demo_player/player46.png" type="Texture" id=29]
+[ext_resource path="res://resource/png/demo_player/player47.png" type="Texture" id=30]
+[ext_resource path="res://resource/png/demo_player/player48.png" type="Texture" id=31]
+[ext_resource path="res://resource/png/demo_player/player49.png" type="Texture" id=32]
+[ext_resource path="res://resource/png/demo_player/player50.png" type="Texture" id=33]
+[ext_resource path="res://resource/png/demo_player/player51.png" type="Texture" id=34]
+[ext_resource path="res://resource/png/demo_player/player52.png" type="Texture" id=35]
+[ext_resource path="res://resource/png/demo_player/player53.png" type="Texture" id=36]
+[ext_resource path="res://resource/png/demo_player/player54.png" type="Texture" id=37]
+[ext_resource path="res://resource/png/demo_player/player55.png" type="Texture" id=38]
+[ext_resource path="res://resource/png/demo_player/player56.png" type="Texture" id=39]
+[ext_resource path="res://resource/png/demo_player/player57.png" type="Texture" id=40]
+[ext_resource path="res://resource/png/demo_player/player58.png" type="Texture" id=41]
+[ext_resource path="res://resource/png/demo_player/player59.png" type="Texture" id=42]
+[ext_resource path="res://resource/png/demo_player/player60.png" type="Texture" id=43]
+[ext_resource path="res://resource/png/demo_player/player61.png" type="Texture" id=44]
+[ext_resource path="res://resource/png/demo_player/player62.png" type="Texture" id=45]
+[ext_resource path="res://resource/png/demo_player/player63.png" type="Texture" id=46]
+[ext_resource path="res://resource/png/demo_player/player64.png" type="Texture" id=47]
+[ext_resource path="res://resource/png/demo_player/player65.png" type="Texture" id=48]
+[ext_resource path="res://resource/png/demo_player/player66.png" type="Texture" id=49]
+[ext_resource path="res://resource/png/demo_player/player67.png" type="Texture" id=50]
+[ext_resource path="res://resource/png/demo_player/player68.png" type="Texture" id=51]
+[ext_resource path="res://resource/png/demo_player/player69.png" type="Texture" id=52]
+[ext_resource path="res://resource/png/demo_player/player70.png" type="Texture" id=53]
+[ext_resource path="res://resource/png/demo_player/player71.png" type="Texture" id=54]
+[ext_resource path="res://resource/png/demo_player/player72.png" type="Texture" id=55]
+[ext_resource path="res://resource/png/demo_player/player73.png" type="Texture" id=56]
+[ext_resource path="res://resource/png/demo_player/player74.png" type="Texture" id=57]
+[ext_resource path="res://resource/png/demo_player/player75.png" type="Texture" id=58]
+[ext_resource path="res://resource/png/demo_player/player76.png" type="Texture" id=59]
+[ext_resource path="res://resource/png/demo_player/player77.png" type="Texture" id=60]
+[ext_resource path="res://resource/png/demo_player/player78.png" type="Texture" id=61]
+[ext_resource path="res://resource/png/demo_player/player79.png" type="Texture" id=62]
+[ext_resource path="res://resource/png/demo_player/player80.png" type="Texture" id=63]
+[ext_resource path="res://resource/png/demo_player/player81.png" type="Texture" id=64]
+[ext_resource path="res://resource/png/demo_player/player82.png" type="Texture" id=65]
+[ext_resource path="res://resource/png/demo_player/player83.png" type="Texture" id=66]
+[ext_resource path="res://resource/png/demo_player/player84.png" type="Texture" id=67]
+[ext_resource path="res://resource/png/demo_player/player85.png" type="Texture" id=68]
+[ext_resource path="res://resource/png/demo_player/player86.png" type="Texture" id=69]
+[ext_resource path="res://resource/png/demo_player/player87.png" type="Texture" id=70]
+[ext_resource path="res://resource/png/demo_player/player88.png" type="Texture" id=71]
+[ext_resource path="res://resource/png/demo_player/player89.png" type="Texture" id=72]
+[ext_resource path="res://resource/png/demo_player/player90.png" type="Texture" id=73]
+[ext_resource path="res://resource/png/demo_player/player1.png" type="Texture" id=74]
+[ext_resource path="res://resource/png/demo_player/player2.png" type="Texture" id=75]
+[ext_resource path="res://resource/png/demo_player/player3.png" type="Texture" id=76]
+[ext_resource path="res://resource/png/demo_player/player4.png" type="Texture" id=77]
+[ext_resource path="res://resource/png/demo_player/player5.png" type="Texture" id=78]
+[ext_resource path="res://resource/png/demo_player/player6.png" type="Texture" id=79]
+[ext_resource path="res://resource/png/demo_player/player7.png" type="Texture" id=80]
+[ext_resource path="res://resource/png/demo_player/player8.png" type="Texture" id=81]
+[ext_resource path="res://resource/png/demo_player/player9.png" type="Texture" id=82]
+[ext_resource path="res://resource/png/demo_player/player10.png" type="Texture" id=83]
+[ext_resource path="res://resource/png/demo_player/player11.png" type="Texture" id=84]
+[ext_resource path="res://resource/png/demo_player/player12.png" type="Texture" id=85]
+[ext_resource path="res://resource/png/demo_player/player13.png" type="Texture" id=86]
+[ext_resource path="res://resource/png/demo_player/player14.png" type="Texture" id=87]
+[ext_resource path="res://resource/png/demo_player/player15.png" type="Texture" id=88]
+[ext_resource path="res://resource/png/demo_player/player16.png" type="Texture" id=89]
+[ext_resource path="res://resource/png/car.png" type="Texture" id=90]
+[ext_resource path="res://resource/png/cabin.png" type="Texture" id=91]
+[ext_resource path="res://resource/png/button/door.png" type="Texture" id=92]
+[ext_resource path="res://resource/png/demo_player/player17.png" type="Texture" id=93]
+[ext_resource path="res://resource/png/demo/blood_red2.png" type="Texture" id=94]
+[ext_resource path="res://resource/png/demo/blood_green3.png" type="Texture" id=95]
+[ext_resource path="res://resource/png/demo/blood_green1.png" type="Texture" id=96]
+[ext_resource path="res://resource/sound/demo_movie.mp3" type="AudioStream" id=97]
+[ext_resource path="res://resource/png/demo/blood_green2.png" type="Texture" id=98]
+[ext_resource path="res://resource/png/demo/blood_red1.png" type="Texture" id=99]
+[ext_resource path="res://resource/png/demo/blood_red3.png" type="Texture" id=100]
+[ext_resource path="res://ignition_timer/IgnitionTimer.gd" type="Script" id=101]
+[ext_resource path="res://ignition_timer/IgnitionTimer.tscn" type="PackedScene" id=102]
+[ext_resource path="res://zombie/Zombie.tscn" type="PackedScene" id=103]
+[ext_resource path="res://game/Game.tscn" type="PackedScene" id=104]
+[ext_resource path="res://demo/Demo.gd" type="Script" id=105]
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 99 ), ExtResource( 94 ), ExtResource( 100 ) ],
+"loop": false,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 96 ), ExtResource( 98 ), ExtResource( 95 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 93 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ) ],
+"loop": false,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=5]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Player:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Player:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("RedBlood:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("RedBlood:frame")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("RedParticle:emitting")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("GreenParticle:emitting")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("GreenBlood:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ true ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("GreenBlood:frame")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 1 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Zombies:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "main"
+length = 60.0
+tracks/0/type = "audio"
+tracks/0/path = NodePath("BGM1")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"clips": [ {
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource( 97 )
+} ],
+"times": PoolRealArray( 0 )
+}
+tracks/1/type = "audio"
+tracks/1/path = NodePath("BGM2")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"clips": [  ],
+"times": PoolRealArray(  )
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Player:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 38.7, 40.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Player:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 43 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Player:frame")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 43 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("GreenBlood:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 29.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("RedBlood:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 3.28502 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("GreenBlood:frame")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 31.7, 36.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("RedBlood:frame")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 7.57836, 12.176 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2 ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("RedParticle:emitting")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 4.4, 14.4, 18.2, 27.168 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false, true, false ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("GreenParticle:emitting")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 27.7, 28.2, 28.3, 29, 29.1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ false, true, false, true, false, true ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Zombies:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 42.1, 42.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="Demo" type="Node2D"]
+script = ExtResource( 105 )
+next_scene = ExtResource( 104 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 320.0
+margin_bottom = 240.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RedBlood" type="AnimatedSprite" parent="."]
+position = Vector2( 80, 119.25 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 4 )
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RedParticle" type="CPUParticles2D" parent="."]
+position = Vector2( 29, 94 )
+amount = 16
+explosiveness = 0.76
+direction = Vector2( -1, -1 )
+initial_velocity = 41.43
+initial_velocity_random = 1.0
+color = Color( 1, 0, 0.117188, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="GreenBlood" type="AnimatedSprite" parent="."]
+position = Vector2( 80, 119.25 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 3 )
+frame = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="GreenParticle" type="CPUParticles2D" parent="."]
+position = Vector2( 37, 97 )
+emitting = false
+amount = 54
+lifetime = 0.25
+one_shot = true
+explosiveness = 1.0
+direction = Vector2( -1, 0 )
+initial_velocity = 333.79
+initial_velocity_random = 1.0
+scale_amount = 2.08
+scale_amount_random = 1.0
+color = Color( 0.0313726, 0.976471, 0, 1 )
+hue_variation = 1.0
+hue_variation_random = 0.02
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Mask2" type="ColorRect" parent="."]
+margin_left = 26.0
+margin_top = 82.0
+margin_right = 50.0
+margin_bottom = 105.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Mask4" type="ColorRect" parent="."]
+margin_top = 62.0
+margin_right = 43.0
+margin_bottom = 87.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Mask5" type="ColorRect" parent="."]
+margin_top = 81.0
+margin_right = 7.0
+margin_bottom = 106.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Mask3" type="ColorRect" parent="."]
+margin_top = 94.0
+margin_right = 50.0
+margin_bottom = 184.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Cabin" type="Sprite" parent="."]
+position = Vector2( 52, 93 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 91 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Door" type="Sprite" parent="Cabin"]
+position = Vector2( 6.5, 6 )
+texture = ExtResource( 92 )
+offset = Vector2( 14, 0 )
+
+[node name="Car" type="Sprite" parent="."]
+position = Vector2( 127, 162 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 90 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Player" type="AnimatedSprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 80, 119 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 1 )
+playing = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "main"
+anims/RESET = SubResource( 5 )
+anims/main = SubResource( 2 )
+
+[node name="BGM1" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 97 )
+
+[node name="BGM2" type="AudioStreamPlayer" parent="."]
+
+[node name="IgnitionTimer" parent="." instance=ExtResource( 102 )]
+script = ExtResource( 101 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Zombies" type="Node2D" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+
+[node name="Zombie" parent="Zombies" instance=ExtResource( 103 )]
+position = Vector2( 128, 115 )
+is_active = false
+animation = 2
+
+[node name="Zombie4" parent="Zombies" instance=ExtResource( 103 )]
+position = Vector2( 59, 151 )
+is_active = false
+animation = 1
+
+[node name="Zombie5" parent="Zombies" instance=ExtResource( 103 )]
+position = Vector2( 190, 194 )
+is_active = false
+animation = 1
+
+[node name="Zombie6" parent="Zombies" instance=ExtResource( 103 )]
+position = Vector2( 195, 131 )
+is_active = false
+animation = 2
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
