@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ヘリコプター飛行中（機外）.mp3-3cf971c160dbd1747daac5b8a125ccae.mp3str"
+
+[deps]
+
+source_file="res://resource/sound/ヘリコプター飛行中（機外）.mp3"
+dest_files=[ "res://.import/ヘリコプター飛行中（機外）.mp3-3cf971c160dbd1747daac5b8a125ccae.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

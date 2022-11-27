@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/レベルアップ.mp3-1613c89e7a3e140890b0e92379010a4b.mp3str"
+
+[deps]
+
+source_file="res://resource/sound/レベルアップ.mp3"
+dest_files=[ "res://.import/レベルアップ.mp3-1613c89e7a3e140890b0e92379010a4b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

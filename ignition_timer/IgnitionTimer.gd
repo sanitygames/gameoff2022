@@ -1,6 +1,7 @@
 extends Node2D
 
 signal ignition_timer_update(rest_time)
+signal ignition
 
 export (bool) var is_active = false
 
@@ -14,6 +15,10 @@ func _physics_process(delta):
 		emit_signal("ignition_timer_update", timer)
 	Global.time_left = timer
 	time_update()
+	if timer <= 0:
+		emit_signal("ignition")
+		set_physics_process(false)
+		$BlinkTimer.stop()
 
 func _on_BlinkTimer_timeout():
 	blink = !blink

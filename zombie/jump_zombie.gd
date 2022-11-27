@@ -1,5 +1,7 @@
 extends Node2D
 
+signal destroy
+
 var g = 20.0
 var velocity = Vector2.ZERO
 var speed = 10.0

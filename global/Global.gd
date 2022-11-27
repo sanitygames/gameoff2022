@@ -10,6 +10,8 @@ var player_position = Vector2.ZERO
 
 var time_left = 999.9
 
+var game_clear = false
+
 func get_zombie_particle():
 	var p = zombie_particle_prefab.instance()
 	return p

@@ -8,10 +8,11 @@ func _ready():
 
 func shake():
 	for i in 10:
-		position = origin + Vector2(randi() % 10 - 5, randi() % 10 - 5)
+		position = origin + Vector2(randi() % 4 - 2, randi() % 4 - 2)
 		yield(get_tree(), "idle_frame")
 	position = origin
 
 
 func _on_Fukidasi_hit():
-	shake()
+	if !Global.game_clear:
+		shake()
