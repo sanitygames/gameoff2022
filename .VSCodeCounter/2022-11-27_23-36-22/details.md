@@ -1,32 +1,47 @@
 # Details
 
-Date : 2022-11-26 16:54:49
+Date : 2022-11-27 23:36:22
 
 Directory /Users/sanitygames/godot/gameoff2022
 
-Total : 143 files,  4953 codes, 7 comments, 919 blanks, all 5879 lines
+Total : 173 files,  6070 codes, 13 comments, 1222 blanks, all 7305 lines
 
 [Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
 
 ## Files
 | filename | language | code | comment | blank | total |
 | :--- | :--- | ---: | ---: | ---: | ---: |
+| [boss/Boss.tscn](/boss/Boss.tscn) | GDResource | 71 | 0 | 13 | 84 |
 | [default_bus_layout.tres](/default_bus_layout.tres) | GDResource | 3 | 0 | 2 | 5 |
 | [default_env.tres](/default_env.tres) | GDResource | 5 | 0 | 3 | 8 |
-| [demo/Demo.gd](/demo/Demo.gd) | GDScript | 4 | 0 | 3 | 7 |
-| [demo/Demo.tscn](/demo/Demo.tscn) | GDResource | 523 | 0 | 31 | 554 |
-| [game/Game.gd](/game/Game.gd) | GDScript | 1 | 0 | 1 | 2 |
-| [game/Game.tscn](/game/Game.tscn) | GDResource | 239 | 0 | 30 | 269 |
-| [game/Life.gd](/game/Life.gd) | GDScript | 18 | 0 | 9 | 27 |
-| [game/Weapon.gd](/game/Weapon.gd) | GDScript | 17 | 0 | 7 | 24 |
+| [demo/Demo.gd](/demo/Demo.gd) | GDScript | 7 | 0 | 4 | 11 |
+| [demo/Demo.tscn](/demo/Demo.tscn) | GDResource | 530 | 0 | 31 | 561 |
+| [game/Bomb.gd](/game/Bomb.gd) | GDScript | 12 | 0 | 5 | 17 |
+| [game/Cabin.gd](/game/Cabin.gd) | GDScript | 9 | 0 | 8 | 17 |
+| [game/Car.gd](/game/Car.gd) | GDScript | 13 | 0 | 6 | 19 |
+| [game/Fukidasi.gd](/game/Fukidasi.gd) | GDScript | 19 | 0 | 10 | 29 |
+| [game/Game.gd](/game/Game.gd) | GDScript | 142 | 6 | 29 | 177 |
+| [game/Game.tscn](/game/Game.tscn) | GDResource | 636 | 0 | 86 | 722 |
+| [game/Life.gd](/game/Life.gd) | GDScript | 21 | 0 | 9 | 30 |
+| [game/WeaponSpawner.gd](/game/WeaponSpawner.gd) | GDScript | 12 | 0 | 9 | 21 |
+| [game/WeaponUI.gd](/game/WeaponUI.gd) | GDScript | 22 | 0 | 10 | 32 |
+| [game/ZombieSpawner.gd](/game/ZombieSpawner.gd) | GDScript | 27 | 0 | 10 | 37 |
+| [global/Global.gd](/global/Global.gd) | GDScript | 29 | 0 | 13 | 42 |
+| [global/Global.tscn](/global/Global.tscn) | GDResource | 13 | 0 | 5 | 18 |
+| [global/ZombieParticle.gd](/global/ZombieParticle.gd) | GDScript | 6 | 0 | 3 | 9 |
+| [global/ZombieParticle.tscn](/global/ZombieParticle.tscn) | GDResource | 31 | 0 | 7 | 38 |
 | [icon.png.import](/icon.png.import) | GDResource | 30 | 0 | 6 | 36 |
-| [ignition_timer/IgnitionTimer.gd](/ignition_timer/IgnitionTimer.gd) | GDScript | 15 | 0 | 8 | 23 |
-| [ignition_timer/IgnitionTimer.tscn](/ignition_timer/IgnitionTimer.tscn) | GDResource | 22 | 0 | 7 | 29 |
-| [project.godot](/project.godot) | GDResource | 58 | 7 | 22 | 87 |
+| [ignition_timer/IgnitionTimer.gd](/ignition_timer/IgnitionTimer.gd) | GDScript | 23 | 0 | 9 | 32 |
+| [ignition_timer/IgnitionTimer.tscn](/ignition_timer/IgnitionTimer.tscn) | GDResource | 23 | 0 | 7 | 30 |
+| [project.godot](/project.godot) | GDResource | 64 | 7 | 22 | 93 |
 | [resource/Template.tscn](/resource/Template.tscn) | GDResource | 134 | 0 | 9 | 143 |
 | [resource/font/font16px.tres](/resource/font/font16px.tres) | GDResource | 4 | 0 | 3 | 7 |
 | [resource/font/font32px.tres](/resource/font/font32px.tres) | GDResource | 5 | 0 | 3 | 8 |
+| [resource/font/font8px.tres](/resource/font/font8px.tres) | GDResource | 5 | 0 | 3 | 8 |
 | [resource/png/Sprite-0009.png.import](/resource/png/Sprite-0009.png.import) | GDResource | 30 | 0 | 6 | 36 |
+| [resource/png/bomb1.png.import](/resource/png/bomb1.png.import) | GDResource | 30 | 0 | 6 | 36 |
+| [resource/png/bomb2.png.import](/resource/png/bomb2.png.import) | GDResource | 30 | 0 | 6 | 36 |
+| [resource/png/bossx.png.import](/resource/png/bossx.png.import) | GDResource | 30 | 0 | 6 | 36 |
 | [resource/png/button/close.png.import](/resource/png/button/close.png.import) | GDResource | 30 | 0 | 6 | 36 |
 | [resource/png/button/close2.png.import](/resource/png/button/close2.png.import) | GDResource | 30 | 0 | 6 | 36 |
 | [resource/png/button/close3.png.import](/resource/png/button/close3.png.import) | GDResource | 30 | 0 | 6 | 36 |
@@ -135,6 +150,7 @@ Total : 143 files,  4953 codes, 7 comments, 919 blanks, all 5879 lines
 | [resource/png/demo_player/player89.png.import](/resource/png/demo_player/player89.png.import) | GDResource | 30 | 0 | 6 | 36 |
 | [resource/png/demo_player/player9.png.import](/resource/png/demo_player/player9.png.import) | GDResource | 30 | 0 | 6 | 36 |
 | [resource/png/demo_player/player90.png.import](/resource/png/demo_player/player90.png.import) | GDResource | 30 | 0 | 6 | 36 |
+| [resource/png/fukidasi.png.import](/resource/png/fukidasi.png.import) | GDResource | 30 | 0 | 6 | 36 |
 | [resource/png/heart.png.import](/resource/png/heart.png.import) | GDResource | 30 | 0 | 6 | 36 |
 | [resource/png/rect1.png.import](/resource/png/rect1.png.import) | GDResource | 30 | 0 | 6 | 36 |
 | [resource/png/stone1.png.import](/resource/png/stone1.png.import) | GDResource | 30 | 0 | 6 | 36 |
@@ -144,15 +160,29 @@ Total : 143 files,  4953 codes, 7 comments, 919 blanks, all 5879 lines
 | [resource/png/z0006.png.import](/resource/png/z0006.png.import) | GDResource | 30 | 0 | 6 | 36 |
 | [resource/png/z0007.png.import](/resource/png/z0007.png.import) | GDResource | 30 | 0 | 6 | 36 |
 | [resource/sound/demo_movie.mp3.import](/resource/sound/demo_movie.mp3.import) | GDResource | 10 | 0 | 6 | 16 |
+| [resource/sound/engine.wav.import](/resource/sound/engine.wav.import) | GDResource | 18 | 0 | 6 | 24 |
+| [resource/sound/gam3.mp3.import](/resource/sound/gam3.mp3.import) | GDResource | 10 | 0 | 6 | 16 |
 | [resource/sound/title03.mp3.import](/resource/sound/title03.mp3.import) | GDResource | 10 | 0 | 6 | 16 |
+| [resource/sound/「キャー」.mp3.import](/resource/sound/%E3%80%8C%E3%82%AD%E3%83%A3%E3%83%BC%E3%80%8D.mp3.import) | GDResource | 10 | 0 | 6 | 16 |
+| [resource/sound/「ギャアアアア！」.mp3.import](/resource/sound/%E3%80%8C%E3%82%AE%E3%83%A3%E3%82%A2%E3%82%A2%E3%82%A2%E3%82%A2%EF%BC%81%E3%80%8D.mp3.import) | GDResource | 10 | 0 | 6 | 16 |
+| [resource/sound/ゾンビに体をえぐられる.mp3.import](/resource/sound/%E3%82%BE%E3%83%B3%E3%83%93%E3%81%AB%E4%BD%93%E3%82%92%E3%81%88%E3%81%90%E3%82%89%E3%82%8C%E3%82%8B.mp3.import) | GDResource | 10 | 0 | 6 | 16 |
+| [resource/sound/ゾンビの声1.mp3.import](/resource/sound/%E3%82%BE%E3%83%B3%E3%83%93%E3%81%AE%E5%A3%B01.mp3.import) | GDResource | 10 | 0 | 6 | 16 |
+| [resource/sound/ヘリコプター飛行中（機内）.mp3.import](/resource/sound/%E3%83%98%E3%83%AA%E3%82%B3%E3%83%97%E3%82%BF%E3%83%BC%E9%A3%9B%E8%A1%8C%E4%B8%AD%EF%BC%88%E6%A9%9F%E5%86%85%EF%BC%89.mp3.import) | GDResource | 10 | 0 | 6 | 16 |
+| [resource/sound/ヘリコプター飛行中（機外）.mp3.import](/resource/sound/%E3%83%98%E3%83%AA%E3%82%B3%E3%83%97%E3%82%BF%E3%83%BC%E9%A3%9B%E8%A1%8C%E4%B8%AD%EF%BC%88%E6%A9%9F%E5%A4%96%EF%BC%89.mp3.import) | GDResource | 10 | 0 | 6 | 16 |
+| [resource/sound/レベルアップ.mp3.import](/resource/sound/%E3%83%AC%E3%83%99%E3%83%AB%E3%82%A2%E3%83%83%E3%83%97.mp3.import) | GDResource | 10 | 0 | 6 | 16 |
+| [resource/sound/打撃3.mp3.import](/resource/sound/%E6%89%93%E6%92%833.mp3.import) | GDResource | 10 | 0 | 6 | 16 |
+| [resource/sound/爆発4.mp3.import](/resource/sound/%E7%88%86%E7%99%BA4.mp3.import) | GDResource | 10 | 0 | 6 | 16 |
+| [resource/sound/車のエンジンをかける1.mp3.import](/resource/sound/%E8%BB%8A%E3%81%AE%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3%E3%82%92%E3%81%8B%E3%81%91%E3%82%8B1.mp3.import) | GDResource | 10 | 0 | 6 | 16 |
 | [resource/sound/魔の時計塔の鐘.mp3.import](/resource/sound/%E9%AD%94%E3%81%AE%E6%99%82%E8%A8%88%E5%A1%94%E3%81%AE%E9%90%98.mp3.import) | GDResource | 10 | 0 | 6 | 16 |
 | [sound_manager/SoundManager.gd](/sound_manager/SoundManager.gd) | GDScript | 3 | 0 | 2 | 5 |
 | [sound_manager/SoundManager.tscn](/sound_manager/SoundManager.tscn) | GDResource | 7 | 0 | 4 | 11 |
-| [title/Title.gd](/title/Title.gd) | GDScript | 5 | 0 | 3 | 8 |
-| [title/Title.tscn](/title/Title.tscn) | GDResource | 179 | 0 | 15 | 194 |
+| [title/Title.gd](/title/Title.gd) | GDScript | 5 | 0 | 5 | 10 |
+| [title/Title.tscn](/title/Title.tscn) | GDResource | 176 | 0 | 15 | 191 |
 | [ui/UI.gd](/ui/UI.gd) | GDScript | 13 | 0 | 6 | 19 |
 | [ui/UI.tscn](/ui/UI.tscn) | GDResource | 75 | 0 | 11 | 86 |
-| [zombie/Zombie.gd](/zombie/Zombie.gd) | GDScript | 21 | 0 | 5 | 26 |
-| [zombie/Zombie.tscn](/zombie/Zombie.tscn) | GDResource | 32 | 0 | 9 | 41 |
+| [weapon/Weapon.gd](/weapon/Weapon.gd) | GDScript | 12 | 0 | 8 | 20 |
+| [weapon/Weapon.tscn](/weapon/Weapon.tscn) | GDResource | 17 | 0 | 8 | 25 |
+| [zombie/Zombie.gd](/zombie/Zombie.gd) | GDScript | 43 | 0 | 13 | 56 |
+| [zombie/Zombie.tscn](/zombie/Zombie.tscn) | GDResource | 35 | 0 | 9 | 44 |
 
 [Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)

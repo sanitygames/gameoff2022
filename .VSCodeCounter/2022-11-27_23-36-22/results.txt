@@ -1,56 +1,74 @@
-Date : 2022-11-26 16:54:49
+Date : 2022-11-27 23:36:22
 Directory : /Users/sanitygames/godot/gameoff2022
-Total : 143 files,  4953 codes, 7 comments, 919 blanks, all 5879 lines
+Total : 173 files,  6070 codes, 13 comments, 1222 blanks, all 7305 lines
 
 Languages
 +------------+------------+------------+------------+------------+------------+
 | language   | files      | code       | comment    | blank      | total      |
 +------------+------------+------------+------------+------------+------------+
-| GDResource |        134 |      4,856 |          7 |        875 |      5,738 |
-| GDScript   |          9 |         97 |          0 |         44 |        141 |
+| GDResource |        155 |      5,652 |          7 |      1,063 |      6,722 |
+| GDScript   |         18 |        418 |          6 |        159 |        583 |
 +------------+------------+------------+------------+------------+------------+
 
 Directories
 +-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
 | path                                                                              | files      | code       | comment    | blank      | total      |
 +-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
-| .                                                                                 |        143 |      4,953 |          7 |        919 |      5,879 |
-| demo                                                                              |          2 |        527 |          0 |         34 |        561 |
-| game                                                                              |          4 |        275 |          0 |         47 |        322 |
-| ignition_timer                                                                    |          2 |         37 |          0 |         15 |         52 |
-| resource                                                                          |        123 |      3,683 |          0 |        735 |      4,418 |
-| resource/font                                                                     |          2 |          9 |          0 |          6 |         15 |
-| resource/png                                                                      |        117 |      3,510 |          0 |        702 |      4,212 |
+| .                                                                                 |        173 |      6,070 |         13 |      1,222 |      7,305 |
+| boss                                                                              |          1 |         71 |          0 |         13 |         84 |
+| demo                                                                              |          2 |        537 |          0 |         35 |        572 |
+| game                                                                              |         10 |        913 |          6 |        182 |      1,101 |
+| global                                                                            |          4 |         79 |          0 |         28 |        107 |
+| ignition_timer                                                                    |          2 |         46 |          0 |         16 |         62 |
+| resource                                                                          |        140 |      3,936 |          0 |        834 |      4,770 |
+| resource/font                                                                     |          3 |         14 |          0 |          9 |         23 |
+| resource/png                                                                      |        121 |      3,630 |          0 |        726 |      4,356 |
 | resource/png/button                                                               |         10 |        300 |          0 |         60 |        360 |
 | resource/png/demo                                                                 |          6 |        180 |          0 |         36 |        216 |
 | resource/png/demo_player                                                          |         90 |      2,700 |          0 |        540 |      3,240 |
-| resource/sound                                                                    |          3 |         30 |          0 |         18 |         48 |
+| resource/sound                                                                    |         15 |        158 |          0 |         90 |        248 |
 | sound_manager                                                                     |          2 |         10 |          0 |          6 |         16 |
-| title                                                                             |          2 |        184 |          0 |         18 |        202 |
+| title                                                                             |          2 |        181 |          0 |         20 |        201 |
 | ui                                                                                |          2 |         88 |          0 |         17 |        105 |
-| zombie                                                                            |          2 |         53 |          0 |         14 |         67 |
+| weapon                                                                            |          2 |         29 |          0 |         16 |         45 |
+| zombie                                                                            |          2 |         78 |          0 |         22 |        100 |
 +-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
 
 Files
 +-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
 | filename                                                                          | language   | code       | comment    | blank      | total      |
 +-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /Users/sanitygames/godot/gameoff2022/boss/Boss.tscn                               | GDResource |         71 |          0 |         13 |         84 |
 | /Users/sanitygames/godot/gameoff2022/default_bus_layout.tres                      | GDResource |          3 |          0 |          2 |          5 |
 | /Users/sanitygames/godot/gameoff2022/default_env.tres                             | GDResource |          5 |          0 |          3 |          8 |
-| /Users/sanitygames/godot/gameoff2022/demo/Demo.gd                                 | GDScript   |          4 |          0 |          3 |          7 |
-| /Users/sanitygames/godot/gameoff2022/demo/Demo.tscn                               | GDResource |        523 |          0 |         31 |        554 |
-| /Users/sanitygames/godot/gameoff2022/game/Game.gd                                 | GDScript   |          1 |          0 |          1 |          2 |
-| /Users/sanitygames/godot/gameoff2022/game/Game.tscn                               | GDResource |        239 |          0 |         30 |        269 |
-| /Users/sanitygames/godot/gameoff2022/game/Life.gd                                 | GDScript   |         18 |          0 |          9 |         27 |
-| /Users/sanitygames/godot/gameoff2022/game/Weapon.gd                               | GDScript   |         17 |          0 |          7 |         24 |
+| /Users/sanitygames/godot/gameoff2022/demo/Demo.gd                                 | GDScript   |          7 |          0 |          4 |         11 |
+| /Users/sanitygames/godot/gameoff2022/demo/Demo.tscn                               | GDResource |        530 |          0 |         31 |        561 |
+| /Users/sanitygames/godot/gameoff2022/game/Bomb.gd                                 | GDScript   |         12 |          0 |          5 |         17 |
+| /Users/sanitygames/godot/gameoff2022/game/Cabin.gd                                | GDScript   |          9 |          0 |          8 |         17 |
+| /Users/sanitygames/godot/gameoff2022/game/Car.gd                                  | GDScript   |         13 |          0 |          6 |         19 |
+| /Users/sanitygames/godot/gameoff2022/game/Fukidasi.gd                             | GDScript   |         19 |          0 |         10 |         29 |
+| /Users/sanitygames/godot/gameoff2022/game/Game.gd                                 | GDScript   |        142 |          6 |         29 |        177 |
+| /Users/sanitygames/godot/gameoff2022/game/Game.tscn                               | GDResource |        636 |          0 |         86 |        722 |
+| /Users/sanitygames/godot/gameoff2022/game/Life.gd                                 | GDScript   |         21 |          0 |          9 |         30 |
+| /Users/sanitygames/godot/gameoff2022/game/WeaponSpawner.gd                        | GDScript   |         12 |          0 |          9 |         21 |
+| /Users/sanitygames/godot/gameoff2022/game/WeaponUI.gd                             | GDScript   |         22 |          0 |         10 |         32 |
+| /Users/sanitygames/godot/gameoff2022/game/ZombieSpawner.gd                        | GDScript   |         27 |          0 |         10 |         37 |
+| /Users/sanitygames/godot/gameoff2022/global/Global.gd                             | GDScript   |         29 |          0 |         13 |         42 |
+| /Users/sanitygames/godot/gameoff2022/global/Global.tscn                           | GDResource |         13 |          0 |          5 |         18 |
+| /Users/sanitygames/godot/gameoff2022/global/ZombieParticle.gd                     | GDScript   |          6 |          0 |          3 |          9 |
+| /Users/sanitygames/godot/gameoff2022/global/ZombieParticle.tscn                   | GDResource |         31 |          0 |          7 |         38 |
 | /Users/sanitygames/godot/gameoff2022/icon.png.import                              | GDResource |         30 |          0 |          6 |         36 |
-| /Users/sanitygames/godot/gameoff2022/ignition_timer/IgnitionTimer.gd              | GDScript   |         15 |          0 |          8 |         23 |
-| /Users/sanitygames/godot/gameoff2022/ignition_timer/IgnitionTimer.tscn            | GDResource |         22 |          0 |          7 |         29 |
-| /Users/sanitygames/godot/gameoff2022/project.godot                                | GDResource |         58 |          7 |         22 |         87 |
+| /Users/sanitygames/godot/gameoff2022/ignition_timer/IgnitionTimer.gd              | GDScript   |         23 |          0 |          9 |         32 |
+| /Users/sanitygames/godot/gameoff2022/ignition_timer/IgnitionTimer.tscn            | GDResource |         23 |          0 |          7 |         30 |
+| /Users/sanitygames/godot/gameoff2022/project.godot                                | GDResource |         64 |          7 |         22 |         93 |
 | /Users/sanitygames/godot/gameoff2022/resource/Template.tscn                       | GDResource |        134 |          0 |          9 |        143 |
 | /Users/sanitygames/godot/gameoff2022/resource/font/font16px.tres                  | GDResource |          4 |          0 |          3 |          7 |
 | /Users/sanitygames/godot/gameoff2022/resource/font/font32px.tres                  | GDResource |          5 |          0 |          3 |          8 |
+| /Users/sanitygames/godot/gameoff2022/resource/font/font8px.tres                   | GDResource |          5 |          0 |          3 |          8 |
 | /Users/sanitygames/godot/gameoff2022/resource/png/Sprite-0009.png.import          | GDResource |         30 |          0 |          6 |         36 |
+| /Users/sanitygames/godot/gameoff2022/resource/png/bomb1.png.import                | GDResource |         30 |          0 |          6 |         36 |
+| /Users/sanitygames/godot/gameoff2022/resource/png/bomb2.png.import                | GDResource |         30 |          0 |          6 |         36 |
+| /Users/sanitygames/godot/gameoff2022/resource/png/bossx.png.import                | GDResource |         30 |          0 |          6 |         36 |
 | /Users/sanitygames/godot/gameoff2022/resource/png/button/close.png.import         | GDResource |         30 |          0 |          6 |         36 |
 | /Users/sanitygames/godot/gameoff2022/resource/png/button/close2.png.import        | GDResource |         30 |          0 |          6 |         36 |
 | /Users/sanitygames/godot/gameoff2022/resource/png/button/close3.png.import        | GDResource |         30 |          0 |          6 |         36 |
@@ -159,6 +177,7 @@ Files
 | /Users/sanitygames/godot/gameoff2022/resource/png/demo_player/player89.png.import | GDResource |         30 |          0 |          6 |         36 |
 | /Users/sanitygames/godot/gameoff2022/resource/png/demo_player/player9.png.import  | GDResource |         30 |          0 |          6 |         36 |
 | /Users/sanitygames/godot/gameoff2022/resource/png/demo_player/player90.png.import | GDResource |         30 |          0 |          6 |         36 |
+| /Users/sanitygames/godot/gameoff2022/resource/png/fukidasi.png.import             | GDResource |         30 |          0 |          6 |         36 |
 | /Users/sanitygames/godot/gameoff2022/resource/png/heart.png.import                | GDResource |         30 |          0 |          6 |         36 |
 | /Users/sanitygames/godot/gameoff2022/resource/png/rect1.png.import                | GDResource |         30 |          0 |          6 |         36 |
 | /Users/sanitygames/godot/gameoff2022/resource/png/stone1.png.import               | GDResource |         30 |          0 |          6 |         36 |
@@ -168,15 +187,29 @@ Files
 | /Users/sanitygames/godot/gameoff2022/resource/png/z0006.png.import                | GDResource |         30 |          0 |          6 |         36 |
 | /Users/sanitygames/godot/gameoff2022/resource/png/z0007.png.import                | GDResource |         30 |          0 |          6 |         36 |
 | /Users/sanitygames/godot/gameoff2022/resource/sound/demo_movie.mp3.import         | GDResource |         10 |          0 |          6 |         16 |
+| /Users/sanitygames/godot/gameoff2022/resource/sound/engine.wav.import             | GDResource |         18 |          0 |          6 |         24 |
+| /Users/sanitygames/godot/gameoff2022/resource/sound/gam3.mp3.import               | GDResource |         10 |          0 |          6 |         16 |
 | /Users/sanitygames/godot/gameoff2022/resource/sound/title03.mp3.import            | GDResource |         10 |          0 |          6 |         16 |
+| /Users/sanitygames/godot/gameoff2022/resource/sound/「キャー」.mp3.import              | GDResource |         10 |          0 |          6 |         16 |
+| /Users/sanitygames/godot/gameoff2022/resource/sound/「ギャアアアア！」.mp3.import          | GDResource |         10 |          0 |          6 |         16 |
+| /Users/sanitygames/godot/gameoff2022/resource/sound/ゾンビに体をえぐられる.mp3.import        | GDResource |         10 |          0 |          6 |         16 |
+| /Users/sanitygames/godot/gameoff2022/resource/sound/ゾンビの声1.mp3.import             | GDResource |         10 |          0 |          6 |         16 |
+| /Users/sanitygames/godot/gameoff2022/resource/sound/ヘリコプター飛行中（機内）.mp3.import      | GDResource |         10 |          0 |          6 |         16 |
+| /Users/sanitygames/godot/gameoff2022/resource/sound/ヘリコプター飛行中（機外）.mp3.import      | GDResource |         10 |          0 |          6 |         16 |
+| /Users/sanitygames/godot/gameoff2022/resource/sound/レベルアップ.mp3.import             | GDResource |         10 |          0 |          6 |         16 |
+| /Users/sanitygames/godot/gameoff2022/resource/sound/打撃3.mp3.import                | GDResource |         10 |          0 |          6 |         16 |
+| /Users/sanitygames/godot/gameoff2022/resource/sound/爆発4.mp3.import                | GDResource |         10 |          0 |          6 |         16 |
+| /Users/sanitygames/godot/gameoff2022/resource/sound/車のエンジンをかける1.mp3.import        | GDResource |         10 |          0 |          6 |         16 |
 | /Users/sanitygames/godot/gameoff2022/resource/sound/魔の時計塔の鐘.mp3.import            | GDResource |         10 |          0 |          6 |         16 |
 | /Users/sanitygames/godot/gameoff2022/sound_manager/SoundManager.gd                | GDScript   |          3 |          0 |          2 |          5 |
 | /Users/sanitygames/godot/gameoff2022/sound_manager/SoundManager.tscn              | GDResource |          7 |          0 |          4 |         11 |
-| /Users/sanitygames/godot/gameoff2022/title/Title.gd                               | GDScript   |          5 |          0 |          3 |          8 |
-| /Users/sanitygames/godot/gameoff2022/title/Title.tscn                             | GDResource |        179 |          0 |         15 |        194 |
+| /Users/sanitygames/godot/gameoff2022/title/Title.gd                               | GDScript   |          5 |          0 |          5 |         10 |
+| /Users/sanitygames/godot/gameoff2022/title/Title.tscn                             | GDResource |        176 |          0 |         15 |        191 |
 | /Users/sanitygames/godot/gameoff2022/ui/UI.gd                                     | GDScript   |         13 |          0 |          6 |         19 |
 | /Users/sanitygames/godot/gameoff2022/ui/UI.tscn                                   | GDResource |         75 |          0 |         11 |         86 |
-| /Users/sanitygames/godot/gameoff2022/zombie/Zombie.gd                             | GDScript   |         21 |          0 |          5 |         26 |
-| /Users/sanitygames/godot/gameoff2022/zombie/Zombie.tscn                           | GDResource |         32 |          0 |          9 |         41 |
-| Total                                                                             |            |      4,953 |          7 |        919 |      5,879 |
+| /Users/sanitygames/godot/gameoff2022/weapon/Weapon.gd                             | GDScript   |         12 |          0 |          8 |         20 |
+| /Users/sanitygames/godot/gameoff2022/weapon/Weapon.tscn                           | GDResource |         17 |          0 |          8 |         25 |
+| /Users/sanitygames/godot/gameoff2022/zombie/Zombie.gd                             | GDScript   |         43 |          0 |         13 |         56 |
+| /Users/sanitygames/godot/gameoff2022/zombie/Zombie.tscn                           | GDResource |         35 |          0 |          9 |         44 |
+| Total                                                                             |            |      6,070 |         13 |      1,222 |      7,305 |
 +-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

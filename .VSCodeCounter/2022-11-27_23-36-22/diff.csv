@@ -1,0 +1,5 @@
+"filename", "language", "GDScript", "GDResource", "comment", "blank", "total"
+"/Users/sanitygames/godot/gameoff2022/demo/Demo.tscn", "GDResource", 0, 7, 0, 0, 7
+"/Users/sanitygames/godot/gameoff2022/game/Game.gd", "GDScript", -1, 0, 1, -2, -2
+"/Users/sanitygames/godot/gameoff2022/game/Game.tscn", "GDResource", 0, -12, 0, 1, -11
+"Total", "-", -1, -5, 1, -1, -6
