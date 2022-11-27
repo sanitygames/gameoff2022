@@ -11,5 +11,5 @@ dest_files=[ "res://.import/車のエンジンをかける1.mp3-6bd3af2147cd917d
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

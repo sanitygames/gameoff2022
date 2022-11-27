@@ -2,13 +2,11 @@ extends Node2D
 
 signal zombie_tutorial_finished
 
-export (Array) var wave_node_pathes
-
 var game_over = false
 var game_clear = false
 var zombies = 4
 var pray_tutorial_progress = 0
-var level = "normal"
+
 var tutorial_words = [
 	"MOVE",
 	"PLEASE",
@@ -98,26 +96,26 @@ func _ready():
 	Global.game_level = rest_time
 	$Timer.stop()
 
-	# ノーマルレベル
-	while Global.time_left >= 105.0:
-		$Fukidasi.set_text(normal_level_words[Global.game_level][randi() % normal_level_words[Global.game_level].size()])
-		yield($Fukidasi, "finished")
+	# lv1
+	print("lv1")
+	yield(_wave(105.0, normal_level_words[Global.game_level]), "completed")
 
-	# ハードレベル
-	while Global.time_left >= 48.0:
-		$Fukidasi.set_text(hard_level_words[Global.game_level][randi() % hard_level_words[Global.game_level].size()])
-		yield($Fukidasi, "finished")
+	# lv2
+	print("lv2")
+	yield(_wave(48.0, hard_level_words[Global.game_level]), "completed")
 
+	# lv3
+	print("lv3")
 	$JumpZombieSpawner.is_active = true
-	while Global.time_left >= 0.0:
-		if game_clear:
-			break
-		$Fukidasi.set_text(hard_level_words[Global.game_level][randi() % hard_level_words[Global.game_level].size()])
-		yield($Fukidasi, "finished")
+	yield(_wave(0.0, hard_level_words[Global.game_level]), "completed")
 
+	# ending
 	Global.game_clear = true
 	$Fukidasi.visible = false
 	clear()
+	$Ignition.play()
+	yield(get_tree().create_timer(10.0), "timeout")
+	$Fly.play()
 	yield($Ending, "animation_finished")
 	$Fukidasi.visible = true
 	$Fukidasi.set_text("FUCKYOU")
@@ -130,6 +128,10 @@ func _ready():
 	$End.play()
 	$GameClearLayer.visible = true
 
+func _wave(_limit, _words):
+	while Global.time_left >= _limit:
+		$Fukidasi.set_text(_words[randi() % _words.size()])
+		yield($Fukidasi, "finished")
 
 
 
@@ -163,11 +165,7 @@ func _on_StartButton_pressed():
 
 func _on_IgnitionTimer_ignition():
 	game_clear = true
-
-
-func _on_Button_pressed():
-	# クリア時出張っgj
-	$GameUILayer/IgnitionTimer.timer = 3.0
+	$Fukidasi.emit_signal("finished")
 
 func clear():
 	$BGM.stop()
