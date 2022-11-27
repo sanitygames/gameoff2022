@@ -8,9 +8,5 @@ func shake():
 		yield(get_tree(), "idle_frame")
 		position = origin
 
-
-
-
-
 func _on_JumpZombieSpawner_jump_zombie_spawn():
 	shake()

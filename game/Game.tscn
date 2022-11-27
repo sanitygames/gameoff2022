@@ -692,7 +692,6 @@ anims/main = SubResource( 17 )
 position = Vector2( 818, -284 )
 scale = Vector2( 4, 4 )
 frames = SubResource( 18 )
-frame = 1
 playing = true
 offset = Vector2( -172.25, 29.5 )
 script = ExtResource( 127 )

@@ -112,7 +112,12 @@ func _ready():
 	# ending
 	Global.game_clear = true
 	$Fukidasi.visible = false
-	clear()
+	$BGM.stop()
+	$ZombieSpawner.is_active = false
+	$JumpZombieSpawner.is_active = false
+	$GameUILayer/IgnitionTimer.set_physics_process(false)
+	$Car/Camera2D.current = true
+	$Ending.play("main")
 	$Ignition.play()
 	yield(get_tree().create_timer(10.0), "timeout")
 	$Fly.play()
@@ -125,6 +130,7 @@ func _ready():
 	yield(get_tree().create_timer(5.0), "timeout")
 	$Bomb2.play()
 	yield(get_tree().create_timer(2.0), "timeout")
+	$Fly.stop()
 	$End.play()
 	$GameClearLayer.visible = true
 
@@ -132,10 +138,6 @@ func _wave(_limit, _words):
 	while Global.time_left >= _limit:
 		$Fukidasi.set_text(_words[randi() % _words.size()])
 		yield($Fukidasi, "finished")
-
-
-
-
 
 func destroy_tutorial_zombie():
 	zombies -= 1
@@ -167,10 +169,3 @@ func _on_IgnitionTimer_ignition():
 	game_clear = true
 	$Fukidasi.emit_signal("finished")
 
-func clear():
-	$BGM.stop()
-	$ZombieSpawner.is_active = false
-	$JumpZombieSpawner.is_active = false
-	$GameUILayer/IgnitionTimer.set_physics_process(false)
-	$Car/Camera2D.current = true
-	$Ending.play("main")

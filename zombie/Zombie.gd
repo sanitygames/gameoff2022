@@ -53,3 +53,7 @@ func _on_WeaponCollision_body_entered(_body:Node):
 	_body.queue_free()
 	emit_signal("destroy")
 	queue_free()
+
+
+func _on_Timer_timeout():
+	queue_free()
