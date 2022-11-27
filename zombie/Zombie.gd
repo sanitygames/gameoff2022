@@ -1,38 +1,49 @@
 extends Node2D
 
-export (bool) var is_active = true
+export (bool) var is_active = true setget set_is_active
+export (bool) var is_jump = false
+export (int) var animation = -1
 
 signal destroy
 
-var frame = 0
-var sprite
+const ANIMATION_NAME = ["1", "2"]
+
 var direction = Vector2.ZERO
-var speed = 0.0
+var velocity = Vector2.ZERO
+var g = 20.0
+var speed = 10.0
+var r = 0.0
+
+func set_is_active(value):
+	is_active = value
+	set_physics_process(is_active)
 
 func _ready():
-	var animated_sprites = []
-	for child in get_children():
-		if child is AnimatedSprite:
-			animated_sprites.push_back(child)
-	var n = randi() % animated_sprites.size()
-	for i in animated_sprites.size():
-		if i == n:
-			sprite = animated_sprites[i]
-		else:
-			animated_sprites[i].queue_free()
+	var _n = randi() % 2 + 1 if animation == -1 else animation
+	var _ns = String(_n)
+	$AnimatedSprite.play(_ns, true)
 
-	$FrameTimer.wait_time = randf()
+	if is_jump:
+		g = 20.0
+		velocity.x = lerp(0, 100, randf())
+		velocity.y = lerp(-10, -30, randf())
+		r = lerp(-10, 10, randf())
+	else:
+		g = 0.0
+		r = 0.0
+		velocity = (Global.player_position - position).normalized()
+
+	set_physics_process(is_active)
 
 func _physics_process(_delta):
-	if is_active:
-		var velocity = (Global.player_position - position).normalized()
-		position += velocity * speed
+	velocity.y += g * _delta
+	rotation += r * _delta
 
-func _on_Timer_timeout():
-	frame += 1
-	sprite.frame = frame % sprite.frames.get_frame_count("default")
-	$FrameTimer.wait_time = randf() * randf()
+	var _d = _delta if is_jump else speed
+	position += velocity * _d
 
+func _on_AnimatedSprite_animation_finished():
+	$AnimatedSprite.speed_scale = lerp(0.5, 3.0, randf())
 
 func _on_WeaponCollision_body_entered(_body:Node):
 	var p = Global.get_zombie_particle()

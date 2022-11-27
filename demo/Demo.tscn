@@ -509,10 +509,10 @@ __meta__ = {
 }
 
 [node name="Player" type="AnimatedSprite" parent="."]
+modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 80, 119 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 1 )
-frame = 89
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -533,21 +533,28 @@ script = ExtResource( 101 )
 __meta__ = {
 "_edit_lock_": true
 }
-is_active = false
 
 [node name="Zombies" type="Node2D" parent="."]
 modulate = Color( 1, 1, 1, 0 )
 
 [node name="Zombie" parent="Zombies" instance=ExtResource( 103 )]
 position = Vector2( 128, 115 )
+is_active = false
+animation = 2
 
 [node name="Zombie4" parent="Zombies" instance=ExtResource( 103 )]
 position = Vector2( 59, 151 )
+is_active = false
+animation = 1
 
 [node name="Zombie5" parent="Zombies" instance=ExtResource( 103 )]
 position = Vector2( 190, 194 )
+is_active = false
+animation = 1
 
 [node name="Zombie6" parent="Zombies" instance=ExtResource( 103 )]
 position = Vector2( 195, 131 )
+is_active = false
+animation = 2
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]

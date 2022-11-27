@@ -115,7 +115,6 @@ func _ready():
 		$Fukidasi.set_text(hard_level_words[Global.game_level][randi() % hard_level_words[Global.game_level].size()])
 		yield($Fukidasi, "finished")
 
-	print("Clear")
 	Global.game_clear = true
 	$Fukidasi.visible = false
 	clear()
