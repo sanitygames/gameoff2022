@@ -26,7 +26,7 @@ func _ready():
 func _physics_process(_delta):
 	if is_active:
 		var velocity = (Global.player_position - position).normalized()
-		position += velocity * 0.1
+		position += velocity * speed
 
 func _on_Timer_timeout():
 	frame += 1

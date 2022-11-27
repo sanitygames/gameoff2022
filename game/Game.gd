@@ -45,6 +45,7 @@ func _ready():
 	$ZombieTutorialDebug.visible = false
 
 	# タイピングのチュートリアル兼ゲームレベル判定
+	$ZombieSpawner.is_active = true
 	$PrayTutorialDebug.visible = true
 	$Fukidasi.visible = true
 	$Timer.wait_time = 999

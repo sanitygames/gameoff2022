@@ -28,4 +28,4 @@ func _on_Button2_pressed():
 
 
 func _on_Fukidasi_finished():
-	add_weapon(Global.game_level + 1)
+	add_weapon(1)

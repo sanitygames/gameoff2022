@@ -12,6 +12,7 @@ func _physics_process(delta):
 	if is_active:
 		timer -= delta
 		emit_signal("ignition_timer_update", timer)
+	Global.time_left = timer
 	time_update()
 
 func _on_BlinkTimer_timeout():

@@ -6,7 +6,6 @@ signal finished
 var word = ""
 
 func set_text(_word):
-	print(_word)
 	word = _word
 	$Label.bbcode_text = formatter(word)
 
@@ -16,6 +15,7 @@ func check_and_next(_str):
 	if word[0] == _str:
 		word.erase(0, 1)
 		emit_signal("hit")
+		$AudioStreamPlayer.play()
 
 	if word == "":
 		emit_signal("finished")
