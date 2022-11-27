@@ -78,6 +78,7 @@ func _input(event):
 				$Fukidasi.check_and_next(event.as_text())
 
 func _ready():
+	Global.game_over = false
 	# ゾンビを倒すチュートリアル
 	$Timer.start()
 	yield(self, "zombie_tutorial_finished")
@@ -153,6 +154,7 @@ func _on_LifeUI_game_over():
 	$BGM.stop()
 	$GameOverLayer.visible = true
 	game_over = true
+	Global.game_over = true
 	print("gameover")
 
 

@@ -10,7 +10,7 @@ export (float) var timer = 300.0
 var blink = true
 
 func _physics_process(delta):
-	if is_active:
+	if is_active && !Global.game_over:
 		timer -= delta
 		emit_signal("ignition_timer_update", timer)
 	Global.time_left = timer

@@ -22,5 +22,6 @@ func spawn():
 
 func _on_Timer_timeout():
 	if is_active:
-		spawn()
+		if randf() >= Global.game_level * 0.3:
+			spawn()
 		$Timer.wait_time = Global.get_zombie_spawn_wait_time()
