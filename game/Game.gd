@@ -16,16 +16,53 @@ var tutorial_words = [
 ]
 
 var normal_level_words = [
-	"MOVE",
-	"MOVE",
-	"MOVE",
-	"MOVE",
-	"PLEASE",
-	"PLEASE",
-	"PLEASE",
-	"HURRYUP",
-	"OHMYGOD",
-	"HELPME",
+	[
+		"MOVE",
+		"MOVE",
+		"PLEASE",
+		"PLEASE",
+		"PLEASE",
+		"HURRYUP",
+		"HELPME",
+	],
+	[
+		"GO",
+		"MOVE",
+		"PLEASE",
+	],
+	[
+		"GO",
+		"GO",
+		"GO",
+		"MOVE",
+		"MOVE",
+		"PLZ",
+	]
+]
+
+var hard_level_words = [
+	[
+		"GO",
+		"GO",
+		"GO",
+		"MOVE",
+		"MOVE",
+		"MOVE",
+		"MOVE",
+		"PLEASE",
+	],
+	[
+		"GO",
+		"MOVE",
+		"PLZ",
+	],
+	[
+		"GO",
+		"GO",
+		"GO",
+		"MOVE",
+		"PLZ",
+	]
 ]
 
 func _input(event):
@@ -38,6 +75,8 @@ func _input(event):
 			$Fukidasi.check_and_next(event.as_text())
 
 func _ready():
+	#test
+	# $JumpZombieSpawner.is_active = true
 	# ゾンビを倒すチュートリアル
 	$ZombieTutorialDebug.visible = true
 	$Timer.start()
@@ -62,11 +101,19 @@ func _ready():
 	$Timer.stop()
 
 	# ノーマルレベル
-	while level == "normal":
-		$Fukidasi.set_text(normal_level_words[randi() % normal_level_words.size()])
+	while Global.time_left >= 105.0:
+		$Fukidasi.set_text(normal_level_words[Global.game_level][randi() % normal_level_words[Global.game_level].size()])
 		yield($Fukidasi, "finished")
 
+	# ハードレベル
+	while Global.time_left >= 48.0:
+		$Fukidasi.set_text(hard_level_words[Global.game_level][randi() % hard_level_words[Global.game_level].size()])
+		yield($Fukidasi, "finished")
 
+	$JumpZombieSpawner.is_active = true
+	while Global.time_left >= 0.0:
+		$Fukidasi.set_text(hard_level_words[Global.game_level][randi() % hard_level_words[Global.game_level].size()])
+		yield($Fukidasi, "finished")
 
 
 

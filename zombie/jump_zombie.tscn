@@ -1,0 +1,55 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://resource/png/z0007.png" type="Texture" id=1]
+[ext_resource path="res://resource/png/z0006.png" type="Texture" id=2]
+[ext_resource path="res://zombie/jump_zombie.gd" type="Script" id=3]
+[ext_resource path="res://resource/png/z0004.png" type="Texture" id=4]
+[ext_resource path="res://resource/png/z0003.png" type="Texture" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 2.375, 11.125 )
+
+[node name="JumpZombie" type="Node2D"]
+position = Vector2( 73, 160 )
+script = ExtResource( 3 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 2, 1 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 1 )
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
+position = Vector2( -1, -1 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 2 )
+
+[node name="WeaponCollision" type="Area2D" parent="."]
+collision_layer = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WeaponCollision"]
+position = Vector2( -0.375, -0.875 )
+shape = SubResource( 3 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 9.174
+one_shot = true
+autostart = true
+
+[connection signal="body_entered" from="WeaponCollision" to="." method="_on_WeaponCollision_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

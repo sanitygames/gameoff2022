@@ -17,11 +17,11 @@ func get_zombie_particle():
 func set_game_level(value):
 	print(value)
 	if value > 995:
-		game_level = 2
+		game_level = 0
 	elif value > 990:
 		game_level = 1
 	else:
-		game_level = 0
+		game_level = 2
 
 	print(game_level)
 

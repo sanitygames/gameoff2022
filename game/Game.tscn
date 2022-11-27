@@ -1,4 +1,4 @@
-[gd_scene load_steps=124 format=2]
+[gd_scene load_steps=128 format=2]
 
 [ext_resource path="res://zombie/Zombie.tscn" type="PackedScene" id=1]
 [ext_resource path="res://resource/png/demo_player/player18.png" type="Texture" id=2]
@@ -114,6 +114,9 @@
 [ext_resource path="res://game/ZombieSpawner.gd" type="Script" id=112]
 [ext_resource path="res://game/Car.gd" type="Script" id=113]
 [ext_resource path="res://resource/sound/engine.wav" type="AudioStream" id=114]
+[ext_resource path="res://resource/sound/gam3.mp3" type="AudioStream" id=115]
+[ext_resource path="res://zombie/jump_zombie.tscn" type="PackedScene" id=116]
+[ext_resource path="res://game/JumpZombieSpawner.gd" type="Script" id=117]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -167,6 +170,11 @@ _data = {
 [sub_resource type="Curve2D" id=9]
 _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 60, 93, 0, 0, 0, 0, 68, 93 )
+}
+
+[sub_resource type="Curve2D" id=10]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 31, 64, 0, 0, 0, 0, 58, 63 )
 }
 
 [node name="Game" type="Node2D"]
@@ -291,6 +299,17 @@ curve = SubResource( 9 )
 wait_time = 10.0
 autostart = true
 
+[node name="JumpZombieSpawner" type="Node2D" parent="."]
+script = ExtResource( 117 )
+zombie_prefab = ExtResource( 116 )
+
+[node name="Path2D" type="Path2D" parent="JumpZombieSpawner"]
+curve = SubResource( 10 )
+
+[node name="Timer" type="Timer" parent="JumpZombieSpawner"]
+wait_time = 2.0
+autostart = true
+
 [node name="GameUILayer" type="CanvasLayer" parent="."]
 
 [node name="IgnitionTimer" parent="GameUILayer" instance=ExtResource( 95 )]
@@ -372,8 +391,13 @@ margin_right = 77.0
 margin_bottom = 14.0
 text = "normal level"
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 115 )
+autoplay = true
+
 [connection signal="finished" from="Fukidasi" to="GameUILayer/WeaponUI" method="_on_Fukidasi_finished"]
 [connection signal="timeout" from="ZombieSpawner/Timer" to="ZombieSpawner" method="_on_Timer_timeout"]
+[connection signal="timeout" from="JumpZombieSpawner/Timer" to="JumpZombieSpawner" method="_on_Timer_timeout"]
 [connection signal="destroy" from="Zombie" to="." method="destroy_tutorial_zombie"]
 [connection signal="destroy" from="Zombie4" to="." method="destroy_tutorial_zombie"]
 [connection signal="destroy" from="Zombie5" to="." method="destroy_tutorial_zombie"]

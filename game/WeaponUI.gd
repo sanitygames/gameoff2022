@@ -14,7 +14,7 @@ func get_weapon():
 		return true
 
 func add_weapon(value):
-	count = min(30, count + value)
+	count = min(99, count + value)
 	_update()
 
 func _update():
