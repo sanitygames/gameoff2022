@@ -1,4 +1,4 @@
-[gd_scene load_steps=103 format=2]
+[gd_scene load_steps=102 format=2]
 
 [ext_resource path="res://resource/png/demo_player/player18.png" type="Texture" id=1]
 [ext_resource path="res://resource/png/demo_player/player19.png" type="Texture" id=2]
@@ -98,7 +98,6 @@
 [ext_resource path="res://resource/font/font16px.tres" type="DynamicFont" id=97]
 [ext_resource path="res://resource/sound/title03.mp3" type="AudioStream" id=98]
 [ext_resource path="res://title/Title.gd" type="Script" id=99]
-[ext_resource path="res://demo/Demo.tscn" type="PackedScene" id=100]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -127,7 +126,6 @@ margin_bottom = 1.0
 
 [node name="Title" type="Node2D"]
 script = ExtResource( 99 )
-next_scene = ExtResource( 100 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_right = 320.0

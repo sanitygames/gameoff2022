@@ -33,6 +33,8 @@ func _ready():
 		r = 0.0
 		velocity = (Global.player_position - position).normalized()
 
+	$AnimatedSprite.scale.x = sign(velocity.x) * 0.5
+
 	set_physics_process(is_active)
 
 func _physics_process(_delta):
