@@ -32,11 +32,7 @@ var normal_level_words = [
 	],
 	[
 		"GO",
-		"GO",
-		"GO",
 		"MOVE",
-		"MOVE",
-		"PLZ",
 	]
 ]
 
@@ -54,14 +50,12 @@ var hard_level_words = [
 	[
 		"GO",
 		"MOVE",
-		"PLZ",
 	],
 	[
 		"GO",
 		"GO",
 		"GO",
 		"MOVE",
-		"PLZ",
 	]
 ]
 
@@ -129,6 +123,7 @@ func _ready():
 	$Bomb.bomb()
 	yield(get_tree().create_timer(5.0), "timeout")
 	$Bomb2.play()
+	$GameClearBGLayer.visible = true
 	yield(get_tree().create_timer(2.0), "timeout")
 	$Fly.stop()
 	$End.play()
@@ -149,6 +144,7 @@ func zombie_tutorial_timer_timeout():
 
 
 func _on_PlayerCollsion_area_entered(_area:Area2D):
+	_area.owner.set_physics_process(false)
 	if !game_clear && !game_over:
 		$GameUILayer/LifeUI.damage()
 
@@ -156,6 +152,9 @@ func _on_PlayerCollsion_area_entered(_area:Area2D):
 func _on_LifeUI_game_over():
 	$BGM.stop()
 	$GameOverLayer.visible = true
+	$GameOverLayer/StartButton.visible = false
+	yield(get_tree().create_timer(1.0), "timeout")
+	$GameOverLayer/StartButton.visible = true
 	game_over = true
 	Global.game_over = true
 	print("gameover")

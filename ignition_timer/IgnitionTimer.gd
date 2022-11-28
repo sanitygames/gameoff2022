@@ -21,7 +21,8 @@ func _physics_process(delta):
 		$BlinkTimer.stop()
 
 func _on_BlinkTimer_timeout():
-	blink = !blink
+	if is_active:
+		blink = !blink
 
 func time_update():
 	var c = ":" if blink else " "
