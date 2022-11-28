@@ -447,17 +447,16 @@ __meta__ = {
 }
 
 [node name="RedBlood" type="AnimatedSprite" parent="."]
-visible = false
 position = Vector2( 80, 119.25 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 4 )
+frame = 1
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="RedParticle" type="CPUParticles2D" parent="."]
 position = Vector2( 29, 94 )
-emitting = false
 amount = 16
 explosiveness = 0.76
 direction = Vector2( -1, -1 )
@@ -469,10 +468,10 @@ __meta__ = {
 }
 
 [node name="GreenBlood" type="AnimatedSprite" parent="."]
-visible = false
 position = Vector2( 80, 119.25 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 3 )
+frame = 1
 __meta__ = {
 "_edit_lock_": true
 }
@@ -559,6 +558,7 @@ modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 80, 119 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 1 )
+playing = true
 __meta__ = {
 "_edit_lock_": true
 }
@@ -616,6 +616,17 @@ custom_styles/hover = SubResource( 6 )
 custom_styles/pressed = SubResource( 6 )
 custom_styles/normal = SubResource( 7 )
 text = "Skip"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 194.0
+margin_top = 215.0
+margin_right = 304.0
+margin_bottom = 231.0
+custom_fonts/normal_font = ExtResource( 106 )
+bbcode_enabled = true
+bbcode_text = "[wave]Introduction[/wave]"
+text = "Introduction"
+scroll_active = false
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
 [connection signal="pressed" from="StartButton" to="." method="_on_StartButton_pressed"]
