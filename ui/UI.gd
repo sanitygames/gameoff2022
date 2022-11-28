@@ -1,18 +1,15 @@
 extends CanvasLayer
 
-func _ready():
-	$VolumeWindow.visible = false
-	var volume = $VolumeWindow/VolumeSlider.value
-	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"), linear2db(volume))
-
-
 func _on_VolumeButton_pressed():
 	$VolumeButton.disabled = true
 	$VolumeWindow.visible = true
 
-func _on_CloseButton_pressed():
+func _on_VolumeWindow_closed():
 	$VolumeButton.disabled = false
-	$VolumeWindow.visible = false
 
-func _on_VSlider_value_changed(value:float):
-	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"), linear2db(value))
+func _on_HelpButton_pressed():
+	$HelpButton.disabled = true
+	$HelpWindow.visible = true
+
+func _on_HelpWindow_closed():
+	$HelpButton.disabled = false
