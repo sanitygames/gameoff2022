@@ -111,8 +111,8 @@
 [ext_resource path="res://game/WeaponUI.gd" type="Script" id=109]
 [ext_resource path="res://resource/png/fukidasi.png" type="Texture" id=110]
 [ext_resource path="res://game/Fukidasi.gd" type="Script" id=111]
+[ext_resource path="res://resource/sound/engine2.wav" type="AudioStream" id=112]
 [ext_resource path="res://game/Car.gd" type="Script" id=113]
-[ext_resource path="res://resource/sound/engine.wav" type="AudioStream" id=114]
 [ext_resource path="res://resource/sound/gam3.mp3" type="AudioStream" id=115]
 [ext_resource path="res://game/ZombieSpawner.gd" type="Script" id=116]
 [ext_resource path="res://resource/png/rect1.png" type="Texture" id=120]
@@ -377,13 +377,13 @@ margin_right = -6.0
 margin_bottom = -31.0
 custom_fonts/normal_font = ExtResource( 106 )
 bbcode_enabled = true
-bbcode_text = "[center][shake]AAAAAAAA![/shake][/center]"
+bbcode_text = "[center][shake]AUCAAAA![/shake][/center]"
 meta_underlined = false
-text = "AAAAAAAA!"
+text = "AUCAAAA!"
 scroll_active = false
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Fukidasi"]
-stream = ExtResource( 114 )
+stream = ExtResource( 112 )
 
 [node name="RedBlood" type="AnimatedSprite" parent="."]
 position = Vector2( 80, 119.25 )
@@ -713,6 +713,7 @@ anims/main = SubResource( 17 )
 position = Vector2( 818, -284 )
 scale = Vector2( 4, 4 )
 frames = SubResource( 18 )
+frame = 1
 playing = true
 offset = Vector2( -172.25, 29.5 )
 script = ExtResource( 127 )
